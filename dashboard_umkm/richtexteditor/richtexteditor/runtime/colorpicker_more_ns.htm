@@ -256,7 +256,7 @@
 		function formatString(format) {
 			format = new String(format);
 			for (var i = 1; i < arguments.length; i++)
-				format = format.replace(new RegExp("\\{" + (i - 1) + "\\}"), arguments[i]);
+				format = format.replace(new RegExp("\\{" + (i - 1) + "\\"), arguments[i]);
 			return format;
 		}
 		function AddValue(o, value) {

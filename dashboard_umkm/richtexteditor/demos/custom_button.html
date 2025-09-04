@@ -41,7 +41,7 @@
 			editor1cfg.svgCode_mybutton = '<svg viewBox="-2 -2 20 20" fill="#5F6368" style="width: 100%; height: 100%;"><path fill-rule="evenodd" d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" clip-rule="evenodd"></path></svg>';
 			editor1cfg.toolbar = "mytoolbar";
 			editor1cfg.toolbar_mytoolbar = "{bold,italic}|{forecolor,backcolor}|removeformat|mybutton"
-				+ "#{undo,redo,fullscreenenter,fullscreenexit,togglemore}";
+				+ "#{undo,redo,fullscreenenter,fullscreenexit,togglemore";
 			var editor1 = new RichTextEditor("#div_editor1", editor1cfg);
 			editor1.attachEvent("exec_command_mybutton", function (state, cmd, value) {
 				state.returnValue = true;//set it has been handled
@@ -111,7 +111,7 @@
 			}
 			editor2cfg.toolbar = "mytoolbar";
 			editor2cfg.toolbar_mytoolbar = "{bold,italic}|{fontname,fontsize}|{forecolor,backcolor}|removeformat|mybutton_b"
-				+ "#{undo,redo,fullscreenenter,fullscreenexit,togglemore}";
+				+ "#{undo,redo,fullscreenenter,fullscreenexit,togglemore";
 			var editor2 = new RichTextEditor("#div_editor2", editor2cfg);
 
 		</script>

@@ -1,7 +1,7 @@
 {
-    "name": "ADMIN - MURIA BATIK KUDUS",
-    "short_name": "ADMIN - MBK",
-    "description": "Muria Batik Kudus is a platform for publish batik kudus from Indonesia.",
+    "name": "DASHBOARD UMKM",
+    "short_name": "DASHBOARD UMKM",
+    "description": "DASHBOARD UMKM is a platform for publish from Indonesia.",
     "start_url": "/",
     "scope": "/",
     "display": "standalone",
