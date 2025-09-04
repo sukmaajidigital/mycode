@@ -1,0 +1,22 @@
+{
+    "name": "ADMIN - MURIA BATIK KUDUS",
+    "short_name": "ADMIN - MBK",
+    "description": "Muria Batik Kudus is a platform for publish batik kudus from Indonesia.",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+        {
+            "src": "/storage/logo/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/storage/logo/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
