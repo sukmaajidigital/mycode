@@ -1,480 +1,771 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light" dir="ltr">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="title" content="Dashboard - DASHBOARDUMKM">
-    <meta property="og:title" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="title" content="Dashboard - DASHBOARDUMKM" />
+    <meta property="og:title" content="" />
     <title>Admin - dashboard umkm</title>
-    <meta name="description" content="ini adalah aplikasi dashboard untuk umkm, dengan kelengkapan yang cukup lengkap untuk sekelas umkm mikro, untuk manajemen dan lain lain">
-    <meta name="keywords" content="ini adalah aplikasi dashboard untuk umkm, dengan kelengkapan yang cukup lengkap untuk sekelas umkm mikro, untuk manajemen dan lain lain">
-    <meta name="author" content="muhammad aji sukma">
-    <meta name="keyphrases" content="dashboard umkm, umkm, sistem integrasi, admin panel, admin">
-    <meta name="classification" content="dashboard umkm, umkm, sistem integrasi, admin panel, admin">
-    <link rel="canonical" href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta
+      name="description"
+      content="ini adalah aplikasi dashboard untuk umkm, dengan kelengkapan yang cukup lengkap untuk sekelas umkm mikro, untuk manajemen dan lain lain"
+    />
+    <meta
+      name="keywords"
+      content="ini adalah aplikasi dashboard untuk umkm, dengan kelengkapan yang cukup lengkap untuk sekelas umkm mikro, untuk manajemen dan lain lain"
+    />
+    <meta name="author" content="muhammad aji sukma" />
+    <meta name="keyphrases" content="dashboard umkm, umkm, sistem integrasi, admin panel, admin" />
+    <meta
+      name="classification"
+      content="dashboard umkm, umkm, sistem integrasi, admin panel, admin"
+    />
+    <link rel="canonical" href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
 
-    <meta property="og:type" content="article">
-    <meta property="og:site_name" content="Admin - dashboard umkm">
-    <meta property="og:locale" content="id_ID">
-    <meta property="og:url" content="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan">
-    <meta property="og:title" content="Admin - dashboard umkm">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png">
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Admin - dashboard umkm" />
+    <meta property="og:locale" content="id_ID" />
+    <meta
+      property="og:url"
+      content="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan"
+    />
+    <meta property="og:title" content="Admin - dashboard umkm" />
+    <meta property="og:description" content="" />
+    <meta
+      property="og:image"
+      content="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png"
+    />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan">
-    <meta name="twitter:creator" content="muhammad aji sukma">
-    <meta name="twitter:url" content="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan">
-    <meta name="twitter:title" content="Admin - dashboard umkm">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png">
-    <meta name="robots" content="all">
-    <meta property="og:locale" content="id">
-    <meta property="og:locale:alternate" content="en">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:site"
+      content="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan"
+    />
+    <meta name="twitter:creator" content="muhammad aji sukma" />
+    <meta
+      name="twitter:url"
+      content="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan"
+    />
+    <meta name="twitter:title" content="Admin - dashboard umkm" />
+    <meta name="twitter:description" content="" />
+    <meta
+      name="twitter:image"
+      content="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png"
+    />
+    <meta name="robots" content="all" />
+    <meta property="og:locale" content="id" />
+    <meta property="og:locale:alternate" content="en" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png"
+    />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Dashboard - DASHBOARDUMKM">
-    <link rel="icon" type="image/png" href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#ffc107">
-    <meta name="theme-color" content="#ffc107">
-    <link rel="shortcut icon" type="image/png" href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Dashboard - DASHBOARDUMKM" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffc107" />
+    <meta name="theme-color" content="#ffc107" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png"
+    />
     <link rel="canonical" href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan" />
 
     <!-- Favicon -->
     <title>Dashboard UMKM</title>
-    <link rel="shortcut icon" type="image/png" href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png"
+    />
 
     <!-- Stylesheets -->
-    <link rel="preload" as="style" href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dbaup-oA.css" /><link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dbaup-oA.css" />    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/datatable/datatable.css" />
-    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/select2.min.css" />
-    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/custom.select2.css" />
-    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/flowbite/flowbite.min.css" />
-    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/alert/sweetalert2.min.css">
-    </head>
+    <link
+      rel="preload"
+      as="style"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dbaup-oA.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dbaup-oA.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/datatable/datatable.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/custom.select2.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/flowbite/flowbite.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/alert/sweetalert2.min.css"
+    />
+  </head>
 
-<body class="flex flex-col min-h-screen">
+  <body class="flex flex-col min-h-screen">
     <!-- resources/views/components/loading-screen.blade.php -->
-<div id="loading-screen" class="inset-0 z-50 flex items-center justify-center bg-transparent transition-opacity duration-300">
-    <span class="loading loading-spinner text-primary"></span>
-</div>
-    <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-        <span class="sr-only">Open sidebar</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
-        </svg>
+    <div
+      id="loading-screen"
+      class="inset-0 z-50 flex items-center justify-center bg-transparent transition-opacity duration-300"
+    >
+      <span class="loading loading-spinner text-primary"></span>
+    </div>
+    <button
+      data-drawer-target="logo-sidebar"
+      data-drawer-toggle="logo-sidebar"
+      aria-controls="logo-sidebar"
+      type="button"
+      class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    >
+      <span class="sr-only">Open sidebar</span>
+      <svg
+        class="w-6 h-6"
+        aria-hidden="true"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+        ></path>
+      </svg>
     </button>
 
-    <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-        <div class="h-full px-3 py-4 overflow-y-auto bg-base-100">
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm" class="flex items-center ps-2.5 mb-5">
-                <img src="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png" class="h-6 me-3 sm:h-7" alt="Dashboard UMKM" />
-                <span class="self-center text-xl font-semibold whitespace-nowrap">Dashboard UMKM</span>
-            </a>
-            <ul class="menu space-y-1 ">
-    
-    
-    <li>
-        <a href="https://sukmaaji.my.id/mycode/dashboard_umkm" class=" ">
-            <span class="icon-[tabler--home-filled] size-5"></span>
-            Dashboard
+    <aside
+      id="logo-sidebar"
+      class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+      aria-label="Sidebar"
+    >
+      <div class="h-full px-3 py-4 overflow-y-auto bg-base-100">
+        <a
+          href="https://sukmaaji.my.id/mycode/dashboard_umkm"
+          class="flex items-center ps-2.5 mb-5"
+        >
+          <img
+            src="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png"
+            class="h-6 me-3 sm:h-7"
+            alt="Dashboard UMKM"
+          />
+          <span class="self-center text-xl font-semibold whitespace-nowrap">Dashboard UMKM</span>
         </a>
-    </li>
-    
-    
-    
-    
-    
-    <li>
-    <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs" class=" ">
-        <span class="icon-[tabler--home] size-5"></span>
-        visitor Logs
-    </a>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-app" data-collapse="#menu-app-collapse">
-        <span class="icon-[tabler--user-hexagon] size-5"></span>
-        Blog
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-app-collapse" class="collapse hidden" aria-labelledby="menu-app">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/blog" class="">
-                <span class="icon-[tabler--category-filled] size-5"></span>
-                Blog
+        <ul class="menu space-y-1">
+          <li>
+            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm" class=" ">
+              <span class="icon-[tabler--home-filled] size-5"></span>
+              Dashboard
             </a>
-        </li>
-    </ul>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-app" data-collapse="#menu-app-pelanggan">
-        <span class="icon-[tabler--user-hexagon] size-5"></span>
-        Pendataan Pelanggan
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-app-pelanggan" class="collapse hidden" aria-labelledby="menu-app">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customerkategori" class="">
-                <span class="icon-[tabler--category-filled] size-5"></span>
-                Kategori Pelanggan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customer" class="">
-                <span class="icon-[tabler--user] size-5"></span>
-                Data Pelanggan
-            </a>
-        </li>
-    </ul>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-bahan" data-collapse="#menu-bahan-collapse">
-        <span class="icon-[tabler--needle-thread] size-5"></span>
-        Pendataan bahan baku
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-bahan-collapse" class="collapse hidden" aria-labelledby="menu-bahan">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahankategori" class="">
-                <span class="icon-[tabler--category] size-5"></span>
-                Kategori bahan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahan" class="">
-                <span class="icon-[lets-icons--materials] size-5"></span>
-                Bahan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/keperluan" class="">
-                <span class="icon-[tabler--needle-thread] size-5"></span>
-                Keperluan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/supplier" class="">
-                <span class="icon-[tabler--user-down] size-5"></span>
-                Supplier
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahanmasuk" class="">
-                <span class="icon-[tabler--package-import] size-5"></span>
-                Bahan Masuk
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahankeluar" class="">
-                <span class="icon-[tabler--package-export] size-5"></span>
-                Bahan Keluar
-            </a>
-        </li>
-    </ul>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-produk" data-collapse="#menu-produk-collapse">
-        <span class="icon-[tabler--package] size-5"></span>
-        Produk
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-produk-collapse" class="collapse hidden" aria-labelledby="menu-app">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/prd/produkkategori" class="">
-                <span class="icon-[tabler--category] size-5"></span>
-                Kategori Produk
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/prd/produk" class="">
-                <span class="icon-[tabler--package] size-5"></span>
-                Data Produk
-            </a>
-        </li>
-    </ul>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-transaksi" data-collapse="#menu-transaksi-collapse">
-        <span class="icon-[tabler--user-hexagon] size-5"></span>
-        Transaksi
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-transaksi-collapse" class="collapse block" aria-labelledby="menu-app">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/invoicesetting" class="">
-                <span class="icon-[tabler--settings] size-5"></span>
-                Invoice Setting
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/source" class="">
-                <span class="icon-[tabler--brand-open-source] size-5"></span>
-                Sumber Transaksi
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan" class="active">
-                <span class="icon-[material-symbols--point-of-sale] size-5"></span>
-                Penjualan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/pemesanan" class="">
-                <span class="icon-[tabler--brand-booking] size-5"></span>
-                Pemesanan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/manualinvoice" class="">
-                <span class="icon-[tabler--brand-booking] size-5"></span>
-                Manual Invoice
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/downpayment" class="">
-                <span class="icon-[tabler--device-ipad-horizontal-down] size-5"></span>
-                Down Payment
-            </a>
-        </li>
-    </ul>
-</li>
-    
-    
-</ul>
+          </li>
 
+          <li>
+            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs" class=" ">
+              <span class="icon-[tabler--home] size-5"></span>
+              visitor Logs
+            </a>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-app"
+              data-collapse="#menu-app-collapse"
+            >
+              <span class="icon-[tabler--user-hexagon] size-5"></span>
+              Blog
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-app-collapse" class="collapse hidden" aria-labelledby="menu-app">
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/blog" class="">
+                  <span class="icon-[tabler--category-filled] size-5"></span>
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-app"
+              data-collapse="#menu-app-pelanggan"
+            >
+              <span class="icon-[tabler--user-hexagon] size-5"></span>
+              Pendataan Pelanggan
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-app-pelanggan" class="collapse hidden" aria-labelledby="menu-app">
+              <li>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customerkategori"
+                  class=""
+                >
+                  <span class="icon-[tabler--category-filled] size-5"></span>
+                  Kategori Pelanggan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customer" class="">
+                  <span class="icon-[tabler--user] size-5"></span>
+                  Data Pelanggan
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-bahan"
+              data-collapse="#menu-bahan-collapse"
+            >
+              <span class="icon-[tabler--needle-thread] size-5"></span>
+              Pendataan bahan baku
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-bahan-collapse" class="collapse hidden" aria-labelledby="menu-bahan">
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahankategori" class="">
+                  <span class="icon-[tabler--category] size-5"></span>
+                  Kategori bahan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahan" class="">
+                  <span class="icon-[lets-icons--materials] size-5"></span>
+                  Bahan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/keperluan" class="">
+                  <span class="icon-[tabler--needle-thread] size-5"></span>
+                  Keperluan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/supplier" class="">
+                  <span class="icon-[tabler--user-down] size-5"></span>
+                  Supplier
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahanmasuk" class="">
+                  <span class="icon-[tabler--package-import] size-5"></span>
+                  Bahan Masuk
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahankeluar" class="">
+                  <span class="icon-[tabler--package-export] size-5"></span>
+                  Bahan Keluar
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-produk"
+              data-collapse="#menu-produk-collapse"
+            >
+              <span class="icon-[tabler--package] size-5"></span>
+              Produk
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-produk-collapse" class="collapse hidden" aria-labelledby="menu-app">
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/prd/produkkategori" class="">
+                  <span class="icon-[tabler--category] size-5"></span>
+                  Kategori Produk
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/prd/produk" class="">
+                  <span class="icon-[tabler--package] size-5"></span>
+                  Data Produk
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-transaksi"
+              data-collapse="#menu-transaksi-collapse"
+            >
+              <span class="icon-[tabler--user-hexagon] size-5"></span>
+              Transaksi
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-transaksi-collapse" class="collapse block" aria-labelledby="menu-app">
+              <li>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/invoicesetting"
+                  class=""
+                >
+                  <span class="icon-[tabler--settings] size-5"></span>
+                  Invoice Setting
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/source" class="">
+                  <span class="icon-[tabler--brand-open-source] size-5"></span>
+                  Sumber Transaksi
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan"
+                  class="active"
+                >
+                  <span class="icon-[material-symbols--point-of-sale] size-5"></span>
+                  Penjualan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/pemesanan" class="">
+                  <span class="icon-[tabler--brand-booking] size-5"></span>
+                  Pemesanan
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/manualinvoice"
+                  class=""
+                >
+                  <span class="icon-[tabler--brand-booking] size-5"></span>
+                  Manual Invoice
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/downpayment"
+                  class=""
+                >
+                  <span class="icon-[tabler--device-ipad-horizontal-down] size-5"></span>
+                  Down Payment
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
 
-
-<div class="dropdown relative inline-flex rtl:[--placement:bottom-end] justify-center px-4 py-10">
-    <button id="dropdown-avatar" type="button" class="dropdown-toggle" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-        <li class="dropdown-header gap-3">
-            <div class="avatar">
+        <div
+          class="dropdown relative inline-flex rtl:[--placement:bottom-end] justify-center px-4 py-10"
+        >
+          <button
+            id="dropdown-avatar"
+            type="button"
+            class="dropdown-toggle"
+            aria-haspopup="menu"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <li class="dropdown-header gap-3">
+              <div class="avatar">
                 <div class="w-10 rounded-full">
-                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png" alt="User Avatar" />
+                  <img
+                    src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png"
+                    alt="User Avatar"
+                  />
                 </div>
-            </div>
-            <div>
+              </div>
+              <div>
                 <h6 class="text-base-content text-base font-semibold">Guest</h6>
                 <small class="text-base-content/50 text-sm font-normal">guest@example.com</small>
-            </div>
-        </li>
-        <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
-    </button>
-    <ul class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-avatar">
-        <li class="dropdown-header gap-3">
-            <div class="avatar">
+              </div>
+            </li>
+            <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="dropdown-avatar"
+          >
+            <li class="dropdown-header gap-3">
+              <div class="avatar">
                 <div class="w-10 rounded-full">
-                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png" alt="User Avatar" />
+                  <img
+                    src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png"
+                    alt="User Avatar"
+                  />
                 </div>
-            </div>
-            <div>
+              </div>
+              <div>
                 <h6 class="text-base-content text-base font-semibold">Guest</h6>
                 <small class="text-base-content/50 text-sm font-normal">guest@example.com</small>
-            </div>
-        </li>
-        <li><a class="dropdown-item" href="#">My Profile</a></li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/setting" class=" dropdown-item ">
+              </div>
+            </li>
+            <li><a class="dropdown-item" href="#">My Profile</a></li>
+            <li>
+              <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/setting" class="dropdown-item">
                 <span class="icon-[tabler--settings] size-5"></span>
                 Setting
-            </a>
-        </li>
-        <li>
-            <form method="POST" action="https://sukmaaji.my.id/mycode/dashboard_umkm/logout">
-                <input type="hidden" name="_token" value="CpSQtHIqtBzkiFoBS84c5S5k01ed3tw3CWZk9jtF" autocomplete="off">                <a class="btn btn-danger mx-3 mt-2 d-block" :href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">
-                    <span class="icon-[tabler--logout] size-4"></span>Logout
+              </a>
+            </li>
+            <li>
+              <form method="POST" action="https://sukmaaji.my.id/mycode/dashboard_umkm/logout">
+                <input
+                  type="hidden"
+                  name="_token"
+                  value="CpSQtHIqtBzkiFoBS84c5S5k01ed3tw3CWZk9jtF"
+                  autocomplete="off"
+                />
+                <a
+                  class="btn btn-danger mx-3 mt-2 d-block"
+                  :href="route('logout')"
+                  onclick="event.preventDefault(); this.closest('form').submit();"
+                >
+                  <span class="icon-[tabler--logout] size-4"></span>Logout
                 </a>
-            </form>
-        </li>
-    </ul>
-</div>
+              </form>
+            </li>
+          </ul>
         </div>
+      </div>
     </aside>
     <main id="main-content" class="">
-        <div class="sm:ml-64">
-                            <div class="card-header">
-                    <h2 class="font-semibold text-3xl text-secondary">
-                        <h2 class="font-semibold text-3xl text-secondary">
-            PENJUALAN
-        </h2>
-                    </h2>
-                </div>
-                        <div class="card-header">
-        <button type="button" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="subModalTambah" data-overlay="#subModalTambah" data-overlay="#ModalTambah" onclick="window.loadCreateSubForm('https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customer/create')">+ Customer</button>
-        <form class="" action="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan" method="POST">
-    <input type="hidden" name="_token" value="CpSQtHIqtBzkiFoBS84c5S5k01ed3tw3CWZk9jtF" autocomplete="off">    <div class="card-header">
-        <h3 class="">Tambah Penjualan</h3>
-    </div>
-    <div class="card-body">
-        <div class="">
-            <label class="label label-text" for="tanggal">
-    tanggal
-</label>
-<input type="date" placeholder="" name="tanggal" class="input" id="tanggal" value="2025-09-04" required  />
-<label class="label label-text" for="invoicenumber">
-    Nomor Invoice
-</label>
-<input type="text" placeholder="" name="invoicenumber" class="input" id="invoicenumber" value="INV.UMKM/PNJ/2025/0000001" required readonly />
-<label class="label label-text" for="customer_id">
-    Customer
-</label>
-<select class="select select2 ltr:text-left " style="padding-right: 2.5rem !important; background-position: right 0.75rem center !important;" id="customer_id" name="customer_id" required  onchange="" dir="ltr">
-            
-        <option value="">Select Customer</option>
-            </select>
-<label class="label label-text" for="source_id">
-    Sumber Transaksi
-</label>
-<select class="select select2 ltr:text-left " style="padding-right: 2.5rem !important; background-position: right 0.75rem center !important;" id="source_id" name="source_id" required  onchange="" dir="ltr">
-            
-        <option value="">Select Sumber Transaksi</option>
-            </select>
-
-
-<input type="text" id="scan_input" placeholder="Scan atau ketik ID Produk..." class="input max-w-sm mt-4">
-<button type="button" id="start_camera" class="btn btn-secondary">Scan dengan Kamera</button>
-
-<div id="qr-reader" style="width:300px;" class="mt-2 hidden"></div>
-<div id="camera-status" class="mt-2 text-green-600 hidden">
-    📷 Kamera aktif. Arahkan ke QR Code produk.
-</div>
-
-<table class="w-full mt-10">
-    <thead>
-        <tr>
-            <th>Nama Produk</th>
-            <th>Qty</th>
-            <th>Harga</th>
-            <th>Sub Harga</th>
-            <th>Aksi</th>
-        </tr>
-    </thead>
-    <tbody id="detail_penjualan">
-                    </tbody>
-</table>
-<button type="button" id="addRow" class="btn btn-primary mt-4">Tambah Baris</button>
-<label class="label label-text" for="total_harga">
-    Total Harga
-</label>
-<input type="" placeholder="" name="total_harga" class="input" id="total_harga" value=""  readonly />
-<label class="label label-text" for="diskon">
-    diskon
-</label>
-<input type="number" placeholder="" name="diskon" class="input" id="diskon" value=""  1 />
-<label class="label label-text" for="last_total">
-    Last Harga
-</label>
-<input type="number" placeholder="" name="last_total" class="input" id="last_total" value=""  readonly />
-
-
-<label class="label label-text" for="status">
-    Status
-</label>
-<select name="status" id="status" class="select ltr:text-left " style="padding-right: 2.5rem !important; background-position: right 0.75rem center !important;">
-    <option value="" disabled selected>Pilih Status</option>
-    <option value="belum lunas" >Belum Lunas</option>
-    <option value="lunas" >Lunas</option>
-</select>
+      <div class="sm:ml-64">
+        <div class="card-header">
+          <h2 class="font-semibold text-3xl text-secondary">
+            <h2 class="font-semibold text-3xl text-secondary">PENJUALAN</h2>
+          </h2>
         </div>
-    </div>
-    <div class="card-footer">
-        <button type="submit" class="btn btn-primary">Save changes</button>
-    </div>
-</form>
-        <div id="subModalTambah" class="overlay modal overlay-open:opacity-100 hidden [--overlay-backdrop:static]" role="dialog" data-overlay-keyboard="false">
-    <div class="modal-dialog overlay-open:opacity-100 modal-dialog-xl">
-        <div class="modal-content">
-            <form class="" action="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customer" method="POST">
-                <input type="hidden" name="_token" value="CpSQtHIqtBzkiFoBS84c5S5k01ed3tw3CWZk9jtF" autocomplete="off">                <div class="modal-header">
+        <div class="card-header">
+          <button
+            type="button"
+            class="btn btn-primary"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+            aria-controls="subModalTambah"
+            data-overlay="#subModalTambah"
+            data-overlay="#ModalTambah"
+            onclick="window.loadCreateSubForm('https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customer/create')"
+          >
+            + Customer
+          </button>
+          <form
+            class=""
+            action="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_token"
+              value="CpSQtHIqtBzkiFoBS84c5S5k01ed3tw3CWZk9jtF"
+              autocomplete="off"
+            />
+            <div class="card-header">
+              <h3 class="">Tambah Penjualan</h3>
+            </div>
+            <div class="card-body">
+              <div class="">
+                <label class="label label-text" for="tanggal"> tanggal </label>
+                <input
+                  type="date"
+                  placeholder=""
+                  name="tanggal"
+                  class="input"
+                  id="tanggal"
+                  value="2025-09-04"
+                  required
+                />
+                <label class="label label-text" for="invoicenumber"> Nomor Invoice </label>
+                <input
+                  type="text"
+                  placeholder=""
+                  name="invoicenumber"
+                  class="input"
+                  id="invoicenumber"
+                  value="INV.UMKM/PNJ/2025/0000001"
+                  required
+                  readonly
+                />
+                <label class="label label-text" for="customer_id"> Customer </label>
+                <select
+                  class="select select2 ltr:text-left"
+                  style="
+                    padding-right: 2.5rem !important;
+                    background-position: right 0.75rem center !important;
+                  "
+                  id="customer_id"
+                  name="customer_id"
+                  required
+                  onchange=""
+                  dir="ltr"
+                >
+                  <option value="">Select Customer</option>
+                </select>
+                <label class="label label-text" for="source_id"> Sumber Transaksi </label>
+                <select
+                  class="select select2 ltr:text-left"
+                  style="
+                    padding-right: 2.5rem !important;
+                    background-position: right 0.75rem center !important;
+                  "
+                  id="source_id"
+                  name="source_id"
+                  required
+                  onchange=""
+                  dir="ltr"
+                >
+                  <option value="">Select Sumber Transaksi</option>
+                </select>
+
+                <input
+                  type="text"
+                  id="scan_input"
+                  placeholder="Scan atau ketik ID Produk..."
+                  class="input max-w-sm mt-4"
+                />
+                <button type="button" id="start_camera" class="btn btn-secondary">
+                  Scan dengan Kamera
+                </button>
+
+                <div id="qr-reader" style="width: 300px" class="mt-2 hidden"></div>
+                <div id="camera-status" class="mt-2 text-green-600 hidden">
+                  📷 Kamera aktif. Arahkan ke QR Code produk.
+                </div>
+
+                <table class="w-full mt-10">
+                  <thead>
+                    <tr>
+                      <th>Nama Produk</th>
+                      <th>Qty</th>
+                      <th>Harga</th>
+                      <th>Sub Harga</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody id="detail_penjualan"></tbody>
+                </table>
+                <button type="button" id="addRow" class="btn btn-primary mt-4">Tambah Baris</button>
+                <label class="label label-text" for="total_harga"> Total Harga </label>
+                <input
+                  type=""
+                  placeholder=""
+                  name="total_harga"
+                  class="input"
+                  id="total_harga"
+                  value=""
+                  readonly
+                />
+                <label class="label label-text" for="diskon"> diskon </label>
+                <input
+                  type="number"
+                  placeholder=""
+                  name="diskon"
+                  class="input"
+                  id="diskon"
+                  value=""
+                  1
+                />
+                <label class="label label-text" for="last_total"> Last Harga </label>
+                <input
+                  type="number"
+                  placeholder=""
+                  name="last_total"
+                  class="input"
+                  id="last_total"
+                  value=""
+                  readonly
+                />
+
+                <label class="label label-text" for="status"> Status </label>
+                <select
+                  name="status"
+                  id="status"
+                  class="select ltr:text-left"
+                  style="
+                    padding-right: 2.5rem !important;
+                    background-position: right 0.75rem center !important;
+                  "
+                >
+                  <option value="" disabled selected>Pilih Status</option>
+                  <option value="belum lunas">Belum Lunas</option>
+                  <option value="lunas">Lunas</option>
+                </select>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+          </form>
+          <div
+            id="subModalTambah"
+            class="overlay modal overlay-open:opacity-100 hidden [--overlay-backdrop:static]"
+            role="dialog"
+            data-overlay-keyboard="false"
+          >
+            <div class="modal-dialog overlay-open:opacity-100 modal-dialog-xl">
+              <div class="modal-content">
+                <form
+                  class=""
+                  action="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customer"
+                  method="POST"
+                >
+                  <input
+                    type="hidden"
+                    name="_token"
+                    value="CpSQtHIqtBzkiFoBS84c5S5k01ed3tw3CWZk9jtF"
+                    autocomplete="off"
+                  />
+                  <div class="modal-header">
                     <h3 class="modal-title">Tambah Customer</h3>
-                    <button type="button" class="btn btn-text btn-circle btn-sm absolute end-3 top-3" aria-label="Close" data-overlay="#subModalTambah">
-                        <span class="icon-[tabler--x] size-4"></span>
+                    <button
+                      type="button"
+                      class="btn btn-text btn-circle btn-sm absolute end-3 top-3"
+                      aria-label="Close"
+                      data-overlay="#subModalTambah"
+                    >
+                      <span class="icon-[tabler--x] size-4"></span>
                     </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-body" id="createSubFormContainer"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-soft btn-secondary"
+                      data-overlay="#subModalTambah"
+                    >
+                      Close
+                    </button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div
+            id="modalEdit"
+            class="overlay modal overlay-open:opacity-100 hidden [--overlay-backdrop:static]"
+            role="dialog"
+            data-overlay-keyboard="false"
+          >
+            <div class="modal-dialog overlay-open:opacity-100 modal-dialog-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">Edit Data</h3>
+                  <button
+                    type="button"
+                    class="btn btn-text btn-circle btn-sm absolute end-3 top-3"
+                    aria-label="Close"
+                    data-overlay="#modalEdit"
+                  >
+                    <span class="icon-[tabler--x] size-4"></span>
+                  </button>
                 </div>
                 <div class="modal-body">
-                    <div class="modal-body" id="createSubFormContainer">
-                    </div>
+                  <div class="modal-body" id="editFormContainer"></div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-soft btn-secondary" data-overlay="#subModalTambah">Close</button>
-                    <button type="submit" class="btn btn-primary">Save changes</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-        <div id="modalEdit" class="overlay modal overlay-open:opacity-100 hidden [--overlay-backdrop:static]" role="dialog" data-overlay-keyboard="false">
-    <div class="modal-dialog overlay-open:opacity-100 modal-dialog-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title">Edit Data</h3>
-                <button type="button" class="btn btn-text btn-circle btn-sm absolute end-3 top-3" aria-label="Close" data-overlay="#modalEdit">
+              </div>
+            </div>
+          </div>
+          <div
+            id="modalView"
+            class="overlay modal overlay-open:opacity-100 hidden [--overlay-backdrop:static]"
+            role="dialog"
+            data-overlay-keyboard="false"
+          >
+            <div class="modal-dialog overlay-open:opacity-100 modal-dialog-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">View Data</h3>
+                  <button
+                    type="button"
+                    class="btn btn-text btn-circle btn-sm absolute end-3 top-3"
+                    aria-label="Close"
+                    data-overlay="#modalView"
+                  >
                     <span class="icon-[tabler--x] size-4"></span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-body" id="editFormContainer">
+                  </button>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-        <div id="modalView" class="overlay modal overlay-open:opacity-100 hidden [--overlay-backdrop:static]" role="dialog" data-overlay-keyboard="false">
-    <div class="modal-dialog overlay-open:opacity-100 modal-dialog-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title">View Data</h3>
-                <button type="button" class="btn btn-text btn-circle btn-sm absolute end-3 top-3" aria-label="Close" data-overlay="#modalView">
-                    <span class="icon-[tabler--x] size-4"></span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-body" id="viewFormContainer">
+                <div class="modal-body">
+                  <div class="modal-body" id="viewFormContainer"></div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-    </div>
-    <div class="card-body">
-        <div id="datatable-filter" class="bg-base-100 flex flex-col rounded-md">
-    <div class="border-base-content/25 flex items-center border-b px-5 py-3 gap-3">
-        <div class="input-group max-w-[15rem]">
-            <span class="input-group-text">
-                <span class="icon-[tabler--search] text-base-content size-4"></span>
-            </span>
-            <input type="search" class="input input-sm grow" id="filter-search" placeholder="Search for items" />
-        </div>
-        <div class="flex flex-1 items-center justify-end gap-3">
-            <select id="select-paginate" class="input input-sm advance-select-sm w-12 justify-between content-center">
-                <option value="20">20</option>
-                <option value="10">10</option>
-                <option value="20">20</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
-            </select>
-            <label for="select-filter1" class="hidden"></label>
-            <select id="select-filter1" class="input input-sm advance-select-sm w-36 justify-between hidden">
-                <option value="">All</option>
-                            </select>
-            <label for="select-filter2" class="hidden"></label>
-            <select id="select-filter2" class="input input-sm advance-select-sm w-36 justify-between hidden">
-                <option value="">All</option>
-                            </select>
-        </div>
-    </div>
+        <div class="card-body">
+          <div id="datatable-filter" class="bg-base-100 flex flex-col rounded-md">
+            <div class="border-base-content/25 flex items-center border-b px-5 py-3 gap-3">
+              <div class="input-group max-w-[15rem]">
+                <span class="input-group-text">
+                  <span class="icon-[tabler--search] text-base-content size-4"></span>
+                </span>
+                <input
+                  type="search"
+                  class="input input-sm grow"
+                  id="filter-search"
+                  placeholder="Search for items"
+                />
+              </div>
+              <div class="flex flex-1 items-center justify-end gap-3">
+                <select
+                  id="select-paginate"
+                  class="input input-sm advance-select-sm w-12 justify-between content-center"
+                >
+                  <option value="20">20</option>
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+                <label for="select-filter1" class="hidden"></label>
+                <select
+                  id="select-filter1"
+                  class="input input-sm advance-select-sm w-36 justify-between hidden"
+                >
+                  <option value="">All</option>
+                </select>
+                <label for="select-filter2" class="hidden"></label>
+                <select
+                  id="select-filter2"
+                  class="input input-sm advance-select-sm w-36 justify-between hidden"
+                >
+                  <option value="">All</option>
+                </select>
+              </div>
+            </div>
 
-    <div class="horizontal-scrollbar overflow-x-auto">
-        <table id="datatable-" class="table min-w-full">
-            <thead>
-                <tr>
+            <div class="horizontal-scrollbar overflow-x-auto">
+              <table id="datatable-" class="table min-w-full">
+                <thead>
+                  <tr>
                     <th>No.</th>
                     <th>Tanggal</th>
                     <th>Sumber Transaksi</th>
@@ -483,383 +774,395 @@
                     <th>Total Harga</th>
                     <th>Status</th>
                     <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                            </tbody>
-        </table>
-    </div>
-</div>
-
-    </div>
-            <footer class="footer footer-center bg-base-100">
-    <aside>
-        <p>&copy; 2025 Dashboard UMKM - SukmaAjiDigital.</p>
-    </aside>
-</footer>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
         </div>
+        <footer class="footer footer-center bg-base-100">
+          <aside>
+            <p>
+              &copy; 2025 Dashboard UMKM -
+              <a href="https://sukmaaji.my.id" target="_blank" rel="noopener noreferrer"
+                >SukmaAjiDigital</a
+              >.
+            </p>
+          </aside>
+        </footer>
+      </div>
     </main>
-    <link rel="modulepreload" href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dc0IQJ--.js" /><script type="module" src="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dc0IQJ--.js"></script>    <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/jquery/dist/jquery.min.js"></script>
+    <link
+      rel="modulepreload"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dc0IQJ--.js"
+    />
+    <script
+      type="module"
+      src="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dc0IQJ--.js"
+    ></script>
+    <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/jquery/dist/jquery.min.js"></script>
     <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/select2.min.js"></script>
-    <script type="text/javascript" src="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/datatable/datatable.min.js"></script>
-    <script type="text/javascript" src="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/loadform.js"></script>
+    <script
+      type="text/javascript"
+      src="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/datatable/datatable.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/loadform.js"
+    ></script>
     <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/flowbite/flowbite.min.js"></script>
     <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/alert/sweetalert2.all.min.js"></script>
-        <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
- <script>
-     document.addEventListener('DOMContentLoaded', function() {
-         function updateSubHarga(row) {
-             let qty = parseInt(row.querySelector('.qty').value) || 0;
-             let harga = parseFloat(row.querySelector('.harga').value) || 0;
-             row.querySelector('.sub_harga').value = qty * harga;
-             updateTotal();
-         }
-
-         function updateTotal() {
-             let total = 0;
-             document.querySelectorAll('.sub_harga').forEach(el => total += parseFloat(el.value) || 0);
-             document.getElementById('total_harga').value = total;
-             let diskon = parseFloat(document.getElementById('diskon').value) || 0;
-             document.getElementById('last_total').value = total - diskon;
-         }
-         document.addEventListener('change', function(event) {
-             if (event.target.classList.contains('produk-select')) {
-                 let selectedOption = event.target.selectedOptions[0];
-                 let harga = selectedOption.getAttribute('data-harga');
-                 let row = event.target.closest('tr');
-                 row.querySelector('.harga').value = harga;
-                 updateSubHarga(row);
-             }
-         });
-         document.addEventListener('input', function(event) {
-             if (event.target.classList.contains('qty')) {
-                 updateSubHarga(event.target.closest('tr'));
-             }
-             if (event.target.classList.contains('harga')) {
-                 updateSubHarga(event.target.closest('tr'));
-             }
-             if (event.target.id === 'diskon') {
-                 updateTotal();
-             }
-         });
-         // add row event
-         document.addEventListener('click', function(event) {
-             // Tambah baris
-             if (event.target.id === 'addRow') {
-                 const row = document.createElement('tr');
-
-                 // Generate options dengan <optgroup> untuk produk + variasi
-                 let optionsHtml = '';
-
-                 Object.values(produkData).forEach(produk => {
-                     optionsHtml += `<optgroup label="${produk.name">`;
-
-                     // Variasi produk (jika ada)
-                     if (produk.variasi && produk.variasi.length > 0) {
-                         produk.variasi.forEach(variasi => {
-                             optionsHtml += `
-                    <option
-                        value="${produk.id"
-                        data-variasi="${variasi.id"
-                        data-harga="${produk.harga"
-                    >
-                        ${produk.name} - ${variasi.nama_variasi}
-                    </option>
-                `;
-                         });
-                     }
-
-                     optionsHtml += `</optgroup>`;
-                 });
-
-                 row.innerHTML = `
-        <td>
-            <select name="produk_id[]" class="input max-w-sm produk-select">
-                <option value="" disabled selected>Pilih Produk</option>
-                ${optionsHtml}
-            </select>
-            <input type="hidden" name="variasi_id[]" value="">
-        </td>
-        <td><input type="number" name="qty[]" class="input max-w-sm qty" value="1" min="1" aria-label="input"></td>
-        <td><input type="number" name="harga[]" class="input max-w-sm harga" value="" aria-label="input"></td>
-        <td><input type="number" name="sub_harga[]" class="input max-w-sm sub_harga" value="" readonly aria-label="input"></td>
-        <td>
-            <button type="button" class="remove-row btn btn-error rounded">
-                <span class="icon-[tabler--x] size-5"></span>
-            </button>
-        </td>
-    `;
-
-                 document.getElementById('detail_penjualan').appendChild(row);
-                 attachRowEvents(row);
-             }
-             // Hapus baris
-             if (event.target.closest('.remove-row')) {
-                 const rows = document.querySelectorAll('#detail_penjualan tr');
-                 if (rows.length > 1) {
-                     event.target.closest('tr').remove();
-                     updateTotal(); // fungsi ini diasumsikan menghitung ulang subtotal / total
-                 }
-             }
-         });
-
-         function attachRowEvents(row) {
-             row.querySelector('.produk-select').addEventListener('change', function() {
-                 let selectedOption = this.selectedOptions[0];
-                 let harga = selectedOption.getAttribute('data-harga');
-                 let row = this.closest('tr');
-                 row.querySelector('.harga').value = harga;
-                 updateSubHarga(row);
-             });
-             row.querySelector('.qty').addEventListener('input', function() {
-                 updateSubHarga(this.closest('tr'));
-             });
-         }
-         const produkData = [];
-         const scanInput = document.getElementById('scan_input');
-
-         function tambahProdukKeTabel(produkId, variasiId = null) {
-             const produk = produkData[produkId];
-             if (!produk) {
-                 alert("Produk tidak ditemukan");
-                 return;
-             }
-
-             // Cari variasi jika ada
-             let namaProduk = produk.name;
-             let selectedVariasi = null;
-
-             if (variasiId && produk.variasi) {
-                 selectedVariasi = produk.variasi.find(v => v.id == variasiId);
-                 if (selectedVariasi) {
-                     namaProduk += ' - ' + selectedVariasi.nama_variasi;
-                 }
-             }
-
-             // Cek apakah produk/variasi sudah ada di tabel
-             const existingRow = Array.from(document.querySelectorAll('#detail_penjualan tr')).find(row => {
-                 const select = row.querySelector('.produk-select');
-                 const variasiInput = row.querySelector('input[name="variasi_id[]"]');
-                 return (
-                     select &&
-                     select.value === String(produkId) &&
-                     variasiInput &&
-                     variasiInput.value === String(variasiId ?? '')
-                 );
-             });
-
-
-             if (existingRow) {
-                 const qtyInput = existingRow.querySelector('.qty');
-                 qtyInput.value = parseInt(qtyInput.value || 0) + 1;
-                 updateSubHarga(existingRow);
-                 updateTotal();
-                 return;
-             }
-
-             // Buat baris baru
-             const row = document.createElement('tr');
-             let optionsHtml = '';
-
-             // Generate options untuk select produk
-             Object.values(produkData).forEach(p => {
-                 optionsHtml += `<optgroup label="${p.name">`;
-                 optionsHtml += `<option value="${p.id" data-harga="${p.harga" ${p.id == produkId && !variasiId ? 'selected' : ''}>${p.name} (Produk Utama)</option>`;
-
-                 if (p.variasi) {
-                     p.variasi.forEach(v => {
-                         optionsHtml += `<option value="${p.id" data-variasi="${v.id" data-harga="${p.harga" ${p.id == produkId && v.id == variasiId ? 'selected' : ''}>${p.name} - ${v.nama_variasi}</option>`;
-                     });
-                 }
-
-                 optionsHtml += `</optgroup>`;
-             });
-
-             row.innerHTML = `
-        <td>
-            <select name="produk_id[]" class="input max-w-sm produk-select">
-                <option value="" disabled selected>Pilih Produk</option>
-                ${optionsHtml}
-            </select>
-            <input type="hidden" name="variasi_id[]" value="${variasiId ?? ''">
-        </td>
-        <td><input type="number" name="qty[]" class="input max-w-sm qty" value="1"></td>
-        <td><input type="number" name="harga[]" class="input max-w-sm harga" value="${produk.harga"></td>
-        <td><input type="number" name="sub_harga[]" class="input max-w-sm sub_harga" value="${produk.harga" readonly></td>
-        <td>
-            <button type="button" class="remove-row btn btn-error rounded">
-                <span class="icon-[tabler--x] size-5"></span>
-            </button>
-        </td>
-    `;
-
-             document.getElementById('detail_penjualan').appendChild(row);
-             row.querySelector('.produk-select').dispatchEvent(new Event('change'));
-
-             // Attach events
-             row.querySelector('.qty').addEventListener('input', () => updateSubHarga(row));
-             row.querySelector('.harga').addEventListener('input', () => updateSubHarga(row));
-             row.querySelector('.produk-select').addEventListener('change', function() {
-                 const selected = this.selectedOptions[0];
-                 row.querySelector('.harga').value = selected.getAttribute('data-harga');
-                 updateSubHarga(row);
-             });
-
-             updateTotal();
-         }
-         // Deteksi input dari alat scanner biasa (yang menekan Enter)
-         scanInput.addEventListener('keypress', function(e) {
-             if (e.key === 'Enter') {
-                 e.preventDefault();
-                 let val = scanInput.value.trim();
-                 const match = val.match(/^variasi:(.+)$/); // Ubah regex
-                 if (match) {
-                     cariProdukBySkuVariasi(match[1]); // Panggil fungsi baru
-                 } else {
-                     cariProdukBySkuVariasi(val); // Fallback untuk input langsung SKU
-                 }
-                 scanInput.value = '';
-             }
-         });
-
-         function cariProdukBySkuVariasi(sku) {
-             // Cari di semua variasi produk
-             let found = false;
-             Object.values(produkData).forEach(produk => {
-                 if (produk.variasi) {
-                     const variasi = produk.variasi.find(v => v.sku === sku);
-                     if (variasi) {
-                         tambahProdukKeTabel(produk.id, variasi.id);
-                         found = true;
-                     }
-                 }
-             });
-
-             if (!found) {
-                 alert("Produk dengan SKU " + sku + " tidak ditemukan");
-             }
-         }
-         // Kamera scanner
-         let html5QrCode;
-         let isCameraRunning = false;
-         const cameraStatus = document.getElementById('camera-status');
-         document.getElementById('start_camera').addEventListener('click', () => {
-             const qrRegion = document.getElementById('qr-reader');
-             qrRegion.classList.remove('hidden');
-
-             if (!html5QrCode) {
-                 html5QrCode = new Html5Qrcode("qr-reader");
-             }
-
-             if (isCameraRunning) {
-                 html5QrCode.stop().then(() => {
-                     isCameraRunning = false;
-                     qrRegion.classList.add('hidden');
-                     cameraStatus.classList.add('hidden');
-                 });
-                 return;
-             }
-             let lastScanTime = 0;
-             html5QrCode.start({
-                     facingMode: "environment"
-                 }, {
-                     fps: 10,
-                     qrbox: 250
-                 },
-                 (decodedText) => {
-                     const currentTime = new Date().getTime();
-                     if (currentTime - lastScanTime > 1000) {
-                         lastScanTime = currentTime;
-                         const match = decodedText.trim().match(/^variasi:(.+)$/); // Ubah regex
-                         if (match) {
-                             cariProdukBySkuVariasi(match[1]);
-                             scanInput.value = '';
-                         } else {
-                             alert("QR tidak valid. Format harus 'variasi:SKU'");
-                         }
-                     }
-                 },
-                 (errorMessage) => {}
-             ).then(() => {
-                 isCameraRunning = true;
-                 cameraStatus.classList.remove('hidden');
-             }).catch(err => {
-                 console.error("Camera error", err);
-             });
-         });
-     });
- </script>
-        
-    
-    
-    
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
     <script>
-        $(document).ready(function() {
-            var table = $('#datatable-').DataTable({
-                language: {
-                    "search": "",
-                    "infoEmpty": "Tidak ada data",
-                    "sEmptyTable": "Tidak ada data",
-                    "sInfoFiltered": "(Difilter dari _MAX_ total data)"
-                },
-                responsive: false,
-                autoWidth: true,
-                scrollY: false,
-                scrollX: false,
-                searching: true,
-                lengthChange: false,
-                pageLength: 20,
-            });
-            $('#filter-search').on('keyup', function() {
-                table.search(this.value).draw();
-            });
-            $('#select-filter1').on('change', function() {
-                table.column().search(this.value).draw();
-            });
-            $('#select-filter2').on('change', function() {
-                table.column().search(this.value).draw();
-            });
-            $('#select-paginate').on('change', function() {
-                table.page.len(this.value).draw();
-            });
-            $('#select-all').on('click', function() {
-                $('.row-checkbox').prop('checked', this.checked);
-            });
-        });
+       document.addEventListener('DOMContentLoaded', function() {
+           function updateSubHarga(row) {
+               let qty = parseInt(row.querySelector('.qty').value) || 0;
+               let harga = parseFloat(row.querySelector('.harga').value) || 0;
+               row.querySelector('.sub_harga').value = qty * harga;
+               updateTotal();
+           }
+
+           function updateTotal() {
+               let total = 0;
+               document.querySelectorAll('.sub_harga').forEach(el => total += parseFloat(el.value) || 0);
+               document.getElementById('total_harga').value = total;
+               let diskon = parseFloat(document.getElementById('diskon').value) || 0;
+               document.getElementById('last_total').value = total - diskon;
+           }
+           document.addEventListener('change', function(event) {
+               if (event.target.classList.contains('produk-select')) {
+                   let selectedOption = event.target.selectedOptions[0];
+                   let harga = selectedOption.getAttribute('data-harga');
+                   let row = event.target.closest('tr');
+                   row.querySelector('.harga').value = harga;
+                   updateSubHarga(row);
+               }
+           });
+           document.addEventListener('input', function(event) {
+               if (event.target.classList.contains('qty')) {
+                   updateSubHarga(event.target.closest('tr'));
+               }
+               if (event.target.classList.contains('harga')) {
+                   updateSubHarga(event.target.closest('tr'));
+               }
+               if (event.target.id === 'diskon') {
+                   updateTotal();
+               }
+           });
+           // add row event
+           document.addEventListener('click', function(event) {
+               // Tambah baris
+               if (event.target.id === 'addRow') {
+                   const row = document.createElement('tr');
+
+                   // Generate options dengan <optgroup> untuk produk + variasi
+                   let optionsHtml = '';
+
+                   Object.values(produkData).forEach(produk => {
+                       optionsHtml += `<optgroup label="${produk.name">`;
+
+                       // Variasi produk (jika ada)
+                       if (produk.variasi && produk.variasi.length > 0) {
+                           produk.variasi.forEach(variasi => {
+                               optionsHtml += `
+                      <option
+                          value="${produk.id"
+                          data-variasi="${variasi.id"
+                          data-harga="${produk.harga"
+                      >
+                          ${produk.name} - ${variasi.nama_variasi}
+                      </option>
+                  `;
+                           });
+                       }
+
+                       optionsHtml += `</optgroup>`;
+                   });
+
+                   row.innerHTML = `
+          <td>
+              <select name="produk_id[]" class="input max-w-sm produk-select">
+                  <option value="" disabled selected>Pilih Produk</option>
+                  ${optionsHtml}
+              </select>
+              <input type="hidden" name="variasi_id[]" value="">
+          </td>
+          <td><input type="number" name="qty[]" class="input max-w-sm qty" value="1" min="1" aria-label="input"></td>
+          <td><input type="number" name="harga[]" class="input max-w-sm harga" value="" aria-label="input"></td>
+          <td><input type="number" name="sub_harga[]" class="input max-w-sm sub_harga" value="" readonly aria-label="input"></td>
+          <td>
+              <button type="button" class="remove-row btn btn-error rounded">
+                  <span class="icon-[tabler--x] size-5"></span>
+              </button>
+          </td>
+      `;
+
+                   document.getElementById('detail_penjualan').appendChild(row);
+                   attachRowEvents(row);
+               }
+               // Hapus baris
+               if (event.target.closest('.remove-row')) {
+                   const rows = document.querySelectorAll('#detail_penjualan tr');
+                   if (rows.length > 1) {
+                       event.target.closest('tr').remove();
+                       updateTotal(); // fungsi ini diasumsikan menghitung ulang subtotal / total
+                   }
+               }
+           });
+
+           function attachRowEvents(row) {
+               row.querySelector('.produk-select').addEventListener('change', function() {
+                   let selectedOption = this.selectedOptions[0];
+                   let harga = selectedOption.getAttribute('data-harga');
+                   let row = this.closest('tr');
+                   row.querySelector('.harga').value = harga;
+                   updateSubHarga(row);
+               });
+               row.querySelector('.qty').addEventListener('input', function() {
+                   updateSubHarga(this.closest('tr'));
+               });
+           }
+           const produkData = [];
+           const scanInput = document.getElementById('scan_input');
+
+           function tambahProdukKeTabel(produkId, variasiId = null) {
+               const produk = produkData[produkId];
+               if (!produk) {
+                   alert("Produk tidak ditemukan");
+                   return;
+               }
+
+               // Cari variasi jika ada
+               let namaProduk = produk.name;
+               let selectedVariasi = null;
+
+               if (variasiId && produk.variasi) {
+                   selectedVariasi = produk.variasi.find(v => v.id == variasiId);
+                   if (selectedVariasi) {
+                       namaProduk += ' - ' + selectedVariasi.nama_variasi;
+                   }
+               }
+
+               // Cek apakah produk/variasi sudah ada di tabel
+               const existingRow = Array.from(document.querySelectorAll('#detail_penjualan tr')).find(row => {
+                   const select = row.querySelector('.produk-select');
+                   const variasiInput = row.querySelector('input[name="variasi_id[]"]');
+                   return (
+                       select &&
+                       select.value === String(produkId) &&
+                       variasiInput &&
+                       variasiInput.value === String(variasiId ?? '')
+                   );
+               });
+
+
+               if (existingRow) {
+                   const qtyInput = existingRow.querySelector('.qty');
+                   qtyInput.value = parseInt(qtyInput.value || 0) + 1;
+                   updateSubHarga(existingRow);
+                   updateTotal();
+                   return;
+               }
+
+               // Buat baris baru
+               const row = document.createElement('tr');
+               let optionsHtml = '';
+
+               // Generate options untuk select produk
+               Object.values(produkData).forEach(p => {
+                   optionsHtml += `<optgroup label="${p.name">`;
+                   optionsHtml += `<option value="${p.id" data-harga="${p.harga" ${p.id == produkId && !variasiId ? 'selected' : ''}>${p.name} (Produk Utama)</option>`;
+
+                   if (p.variasi) {
+                       p.variasi.forEach(v => {
+                           optionsHtml += `<option value="${p.id" data-variasi="${v.id" data-harga="${p.harga" ${p.id == produkId && v.id == variasiId ? 'selected' : ''}>${p.name} - ${v.nama_variasi}</option>`;
+                       });
+                   }
+
+                   optionsHtml += `</optgroup>`;
+               });
+
+               row.innerHTML = `
+          <td>
+              <select name="produk_id[]" class="input max-w-sm produk-select">
+                  <option value="" disabled selected>Pilih Produk</option>
+                  ${optionsHtml}
+              </select>
+              <input type="hidden" name="variasi_id[]" value="${variasiId ?? ''">
+          </td>
+          <td><input type="number" name="qty[]" class="input max-w-sm qty" value="1"></td>
+          <td><input type="number" name="harga[]" class="input max-w-sm harga" value="${produk.harga"></td>
+          <td><input type="number" name="sub_harga[]" class="input max-w-sm sub_harga" value="${produk.harga" readonly></td>
+          <td>
+              <button type="button" class="remove-row btn btn-error rounded">
+                  <span class="icon-[tabler--x] size-5"></span>
+              </button>
+          </td>
+      `;
+
+               document.getElementById('detail_penjualan').appendChild(row);
+               row.querySelector('.produk-select').dispatchEvent(new Event('change'));
+
+               // Attach events
+               row.querySelector('.qty').addEventListener('input', () => updateSubHarga(row));
+               row.querySelector('.harga').addEventListener('input', () => updateSubHarga(row));
+               row.querySelector('.produk-select').addEventListener('change', function() {
+                   const selected = this.selectedOptions[0];
+                   row.querySelector('.harga').value = selected.getAttribute('data-harga');
+                   updateSubHarga(row);
+               });
+
+               updateTotal();
+           }
+           // Deteksi input dari alat scanner biasa (yang menekan Enter)
+           scanInput.addEventListener('keypress', function(e) {
+               if (e.key === 'Enter') {
+                   e.preventDefault();
+                   let val = scanInput.value.trim();
+                   const match = val.match(/^variasi:(.+)$/); // Ubah regex
+                   if (match) {
+                       cariProdukBySkuVariasi(match[1]); // Panggil fungsi baru
+                   } else {
+                       cariProdukBySkuVariasi(val); // Fallback untuk input langsung SKU
+                   }
+                   scanInput.value = '';
+               }
+           });
+
+           function cariProdukBySkuVariasi(sku) {
+               // Cari di semua variasi produk
+               let found = false;
+               Object.values(produkData).forEach(produk => {
+                   if (produk.variasi) {
+                       const variasi = produk.variasi.find(v => v.sku === sku);
+                       if (variasi) {
+                           tambahProdukKeTabel(produk.id, variasi.id);
+                           found = true;
+                       }
+                   }
+               });
+
+               if (!found) {
+                   alert("Produk dengan SKU " + sku + " tidak ditemukan");
+               }
+           }
+           // Kamera scanner
+           let html5QrCode;
+           let isCameraRunning = false;
+           const cameraStatus = document.getElementById('camera-status');
+           document.getElementById('start_camera').addEventListener('click', () => {
+               const qrRegion = document.getElementById('qr-reader');
+               qrRegion.classList.remove('hidden');
+
+               if (!html5QrCode) {
+                   html5QrCode = new Html5Qrcode("qr-reader");
+               }
+
+               if (isCameraRunning) {
+                   html5QrCode.stop().then(() => {
+                       isCameraRunning = false;
+                       qrRegion.classList.add('hidden');
+                       cameraStatus.classList.add('hidden');
+                   });
+                   return;
+               }
+               let lastScanTime = 0;
+               html5QrCode.start({
+                       facingMode: "environment"
+                   }, {
+                       fps: 10,
+                       qrbox: 250
+                   },
+                   (decodedText) => {
+                       const currentTime = new Date().getTime();
+                       if (currentTime - lastScanTime > 1000) {
+                           lastScanTime = currentTime;
+                           const match = decodedText.trim().match(/^variasi:(.+)$/); // Ubah regex
+                           if (match) {
+                               cariProdukBySkuVariasi(match[1]);
+                               scanInput.value = '';
+                           } else {
+                               alert("QR tidak valid. Format harus 'variasi:SKU'");
+                           }
+                       }
+                   },
+                   (errorMessage) => {}
+               ).then(() => {
+                   isCameraRunning = true;
+                   cameraStatus.classList.remove('hidden');
+               }).catch(err => {
+                   console.error("Camera error", err);
+               });
+           });
+       });
     </script>
-    
+
     <script>
-        $(document).ready(function() {
-            $('.select2').select2({
-                placeholder: function() {
-                    return $(this).data('placeholder') || "Select an option";
-                },
-                allowClear: true,
-                width: '100%'
-            });
+      $(document).ready(function () {
+        var table = $("#datatable-").DataTable({
+          language: {
+            search: "",
+            infoEmpty: "Tidak ada data",
+            sEmptyTable: "Tidak ada data",
+            sInfoFiltered: "(Difilter dari _MAX_ total data)",
+          },
+          responsive: false,
+          autoWidth: true,
+          scrollY: false,
+          scrollX: false,
+          searching: true,
+          lengthChange: false,
+          pageLength: 20,
         });
+        $("#filter-search").on("keyup", function () {
+          table.search(this.value).draw();
+        });
+        $("#select-filter1").on("change", function () {
+          table.column().search(this.value).draw();
+        });
+        $("#select-filter2").on("change", function () {
+          table.column().search(this.value).draw();
+        });
+        $("#select-paginate").on("change", function () {
+          table.page.len(this.value).draw();
+        });
+        $("#select-all").on("click", function () {
+          $(".row-checkbox").prop("checked", this.checked);
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".select2").select2({
+          placeholder: function () {
+            return $(this).data("placeholder") || "Select an option";
+          },
+          allowClear: true,
+          width: "100%",
+        });
+      });
     </script>
     <script>
-        const loading = document.getElementById('loading-screen');
+      const loading = document.getElementById("loading-screen");
 
-        // Saat halaman dimuat selesai
-        window.addEventListener('load', () => {
-            if (loading) {
-                loading.classList.add('opacity-0');
-                setTimeout(() => loading.classList.add('hidden'), 1);
-            }
-        });
+      // Saat halaman dimuat selesai
+      window.addEventListener("load", () => {
+        if (loading) {
+          loading.classList.add("opacity-0");
+          setTimeout(() => loading.classList.add("hidden"), 1);
+        }
+      });
 
-        // Saat pengguna meninggalkan halaman (navigasi ke link lain atau reload)
-        window.addEventListener('beforeunload', () => {
-            if (loading) {
-                loading.classList.remove('hidden', 'opacity-0');
-                loading.classList.add('opacity-100');
-            }
-        });
+      // Saat pengguna meninggalkan halaman (navigasi ke link lain atau reload)
+      window.addEventListener("beforeunload", () => {
+        if (loading) {
+          loading.classList.remove("hidden", "opacity-0");
+          loading.classList.add("opacity-100");
+        }
+      });
     </script>
-    <script>
-            </script>
-</body>
-
+    <script></script>
+  </body>
 </html>

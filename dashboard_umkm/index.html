@@ -1,751 +1,1089 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light" dir="ltr">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="title" content="Dashboard - DASHBOARDUMKM">
-    <meta property="og:title" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="title" content="Dashboard - DASHBOARDUMKM" />
+    <meta property="og:title" content="" />
     <title>Admin - dashboard umkm</title>
-    <meta name="description" content="ini adalah aplikasi dashboard untuk umkm, dengan kelengkapan yang cukup lengkap untuk sekelas umkm mikro, untuk manajemen dan lain lain">
-    <meta name="keywords" content="ini adalah aplikasi dashboard untuk umkm, dengan kelengkapan yang cukup lengkap untuk sekelas umkm mikro, untuk manajemen dan lain lain">
-    <meta name="author" content="muhammad aji sukma">
-    <meta name="keyphrases" content="dashboard umkm, umkm, sistem integrasi, admin panel, admin">
-    <meta name="classification" content="dashboard umkm, umkm, sistem integrasi, admin panel, admin">
-    <link rel="canonical" href="https://sukmaaji.my.id/mycode/dashboard_umkm">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta
+      name="description"
+      content="ini adalah aplikasi dashboard untuk umkm, dengan kelengkapan yang cukup lengkap untuk sekelas umkm mikro, untuk manajemen dan lain lain"
+    />
+    <meta
+      name="keywords"
+      content="ini adalah aplikasi dashboard untuk umkm, dengan kelengkapan yang cukup lengkap untuk sekelas umkm mikro, untuk manajemen dan lain lain"
+    />
+    <meta name="author" content="muhammad aji sukma" />
+    <meta name="keyphrases" content="dashboard umkm, umkm, sistem integrasi, admin panel, admin" />
+    <meta
+      name="classification"
+      content="dashboard umkm, umkm, sistem integrasi, admin panel, admin"
+    />
+    <link rel="canonical" href="https://sukmaaji.my.id/mycode/dashboard_umkm" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
 
-    <meta property="og:type" content="article">
-    <meta property="og:site_name" content="Admin - dashboard umkm">
-    <meta property="og:locale" content="id_ID">
-    <meta property="og:url" content="https://sukmaaji.my.id/mycode/dashboard_umkm">
-    <meta property="og:title" content="Admin - dashboard umkm">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png">
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Admin - dashboard umkm" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:url" content="https://sukmaaji.my.id/mycode/dashboard_umkm" />
+    <meta property="og:title" content="Admin - dashboard umkm" />
+    <meta property="og:description" content="" />
+    <meta
+      property="og:image"
+      content="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png"
+    />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="https://sukmaaji.my.id/mycode/dashboard_umkm">
-    <meta name="twitter:creator" content="muhammad aji sukma">
-    <meta name="twitter:url" content="https://sukmaaji.my.id/mycode/dashboard_umkm">
-    <meta name="twitter:title" content="Admin - dashboard umkm">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png">
-    <meta name="robots" content="all">
-    <meta property="og:locale" content="id">
-    <meta property="og:locale:alternate" content="en">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="https://sukmaaji.my.id/mycode/dashboard_umkm" />
+    <meta name="twitter:creator" content="muhammad aji sukma" />
+    <meta name="twitter:url" content="https://sukmaaji.my.id/mycode/dashboard_umkm" />
+    <meta name="twitter:title" content="Admin - dashboard umkm" />
+    <meta name="twitter:description" content="" />
+    <meta
+      name="twitter:image"
+      content="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png"
+    />
+    <meta name="robots" content="all" />
+    <meta property="og:locale" content="id" />
+    <meta property="og:locale:alternate" content="en" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png"
+    />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Dashboard - DASHBOARDUMKM">
-    <link rel="icon" type="image/png" href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#ffc107">
-    <meta name="theme-color" content="#ffc107">
-    <link rel="shortcut icon" type="image/png" href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Dashboard - DASHBOARDUMKM" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffc107" />
+    <meta name="theme-color" content="#ffc107" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png"
+    />
     <link rel="canonical" href="https://sukmaaji.my.id/mycode/dashboard_umkm" />
 
     <!-- Favicon -->
     <title>Dashboard UMKM</title>
-    <link rel="shortcut icon" type="image/png" href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png"
+    />
 
     <!-- Stylesheets -->
-    <link rel="preload" as="style" href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dbaup-oA.css" /><link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dbaup-oA.css" />    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/datatable/datatable.css" />
-    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/select2.min.css" />
-    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/custom.select2.css" />
-    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/flowbite/flowbite.min.css" />
-    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/alert/sweetalert2.min.css">
-    </head>
+    <link
+      rel="preload"
+      as="style"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dbaup-oA.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dbaup-oA.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/datatable/datatable.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/custom.select2.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/flowbite/flowbite.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/alert/sweetalert2.min.css"
+    />
+  </head>
 
-<body class="flex flex-col min-h-screen">
+  <body class="flex flex-col min-h-screen">
     <!-- resources/views/components/loading-screen.blade.php -->
-<div id="loading-screen" class="inset-0 z-50 flex items-center justify-center bg-transparent transition-opacity duration-300">
-    <span class="loading loading-spinner text-primary"></span>
-</div>
-    <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-        <span class="sr-only">Open sidebar</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
-        </svg>
+    <div
+      id="loading-screen"
+      class="inset-0 z-50 flex items-center justify-center bg-transparent transition-opacity duration-300"
+    >
+      <span class="loading loading-spinner text-primary"></span>
+    </div>
+    <button
+      data-drawer-target="logo-sidebar"
+      data-drawer-toggle="logo-sidebar"
+      aria-controls="logo-sidebar"
+      type="button"
+      class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    >
+      <span class="sr-only">Open sidebar</span>
+      <svg
+        class="w-6 h-6"
+        aria-hidden="true"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+        ></path>
+      </svg>
     </button>
 
-    <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-        <div class="h-full px-3 py-4 overflow-y-auto bg-base-100">
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm" class="flex items-center ps-2.5 mb-5">
-                <img src="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png" class="h-6 me-3 sm:h-7" alt="Dashboard UMKM" />
-                <span class="self-center text-xl font-semibold whitespace-nowrap">Dashboard UMKM</span>
-            </a>
-            <ul class="menu space-y-1 ">
-    
-    
-    <li>
-        <a href="https://sukmaaji.my.id/mycode/dashboard_umkm" class="active ">
-            <span class="icon-[tabler--home-filled] size-5"></span>
-            Dashboard
+    <aside
+      id="logo-sidebar"
+      class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+      aria-label="Sidebar"
+    >
+      <div class="h-full px-3 py-4 overflow-y-auto bg-base-100">
+        <a
+          href="https://sukmaaji.my.id/mycode/dashboard_umkm"
+          class="flex items-center ps-2.5 mb-5"
+        >
+          <img
+            src="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png"
+            class="h-6 me-3 sm:h-7"
+            alt="Dashboard UMKM"
+          />
+          <span class="self-center text-xl font-semibold whitespace-nowrap">Dashboard UMKM</span>
         </a>
-    </li>
-    
-    
-    
-    
-    
-    <li>
-    <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs" class=" ">
-        <span class="icon-[tabler--home] size-5"></span>
-        visitor Logs
-    </a>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-app" data-collapse="#menu-app-collapse">
-        <span class="icon-[tabler--user-hexagon] size-5"></span>
-        Blog
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-app-collapse" class="collapse hidden" aria-labelledby="menu-app">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/blog" class="">
-                <span class="icon-[tabler--category-filled] size-5"></span>
-                Blog
+        <ul class="menu space-y-1">
+          <li>
+            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm" class="active">
+              <span class="icon-[tabler--home-filled] size-5"></span>
+              Dashboard
             </a>
-        </li>
-    </ul>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-app" data-collapse="#menu-app-pelanggan">
-        <span class="icon-[tabler--user-hexagon] size-5"></span>
-        Pendataan Pelanggan
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-app-pelanggan" class="collapse hidden" aria-labelledby="menu-app">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customerkategori" class="">
-                <span class="icon-[tabler--category-filled] size-5"></span>
-                Kategori Pelanggan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customer" class="">
-                <span class="icon-[tabler--user] size-5"></span>
-                Data Pelanggan
-            </a>
-        </li>
-    </ul>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-bahan" data-collapse="#menu-bahan-collapse">
-        <span class="icon-[tabler--needle-thread] size-5"></span>
-        Pendataan bahan baku
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-bahan-collapse" class="collapse hidden" aria-labelledby="menu-bahan">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahankategori" class="">
-                <span class="icon-[tabler--category] size-5"></span>
-                Kategori bahan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahan" class="">
-                <span class="icon-[lets-icons--materials] size-5"></span>
-                Bahan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/keperluan" class="">
-                <span class="icon-[tabler--needle-thread] size-5"></span>
-                Keperluan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/supplier" class="">
-                <span class="icon-[tabler--user-down] size-5"></span>
-                Supplier
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahanmasuk" class="">
-                <span class="icon-[tabler--package-import] size-5"></span>
-                Bahan Masuk
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahankeluar" class="">
-                <span class="icon-[tabler--package-export] size-5"></span>
-                Bahan Keluar
-            </a>
-        </li>
-    </ul>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-produk" data-collapse="#menu-produk-collapse">
-        <span class="icon-[tabler--package] size-5"></span>
-        Produk
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-produk-collapse" class="collapse hidden" aria-labelledby="menu-app">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/prd/produkkategori" class="">
-                <span class="icon-[tabler--category] size-5"></span>
-                Kategori Produk
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/prd/produk" class="">
-                <span class="icon-[tabler--package] size-5"></span>
-                Data Produk
-            </a>
-        </li>
-    </ul>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-transaksi" data-collapse="#menu-transaksi-collapse">
-        <span class="icon-[tabler--user-hexagon] size-5"></span>
-        Transaksi
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-transaksi-collapse" class="collapse hidden" aria-labelledby="menu-app">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/invoicesetting" class="">
-                <span class="icon-[tabler--settings] size-5"></span>
-                Invoice Setting
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/source" class="">
-                <span class="icon-[tabler--brand-open-source] size-5"></span>
-                Sumber Transaksi
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan" class="">
-                <span class="icon-[material-symbols--point-of-sale] size-5"></span>
-                Penjualan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/pemesanan" class="">
-                <span class="icon-[tabler--brand-booking] size-5"></span>
-                Pemesanan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/manualinvoice" class="">
-                <span class="icon-[tabler--brand-booking] size-5"></span>
-                Manual Invoice
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/downpayment" class="">
-                <span class="icon-[tabler--device-ipad-horizontal-down] size-5"></span>
-                Down Payment
-            </a>
-        </li>
-    </ul>
-</li>
-    
-    
-</ul>
+          </li>
 
+          <li>
+            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs" class=" ">
+              <span class="icon-[tabler--home] size-5"></span>
+              visitor Logs
+            </a>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-app"
+              data-collapse="#menu-app-collapse"
+            >
+              <span class="icon-[tabler--user-hexagon] size-5"></span>
+              Blog
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-app-collapse" class="collapse hidden" aria-labelledby="menu-app">
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/blog" class="">
+                  <span class="icon-[tabler--category-filled] size-5"></span>
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-app"
+              data-collapse="#menu-app-pelanggan"
+            >
+              <span class="icon-[tabler--user-hexagon] size-5"></span>
+              Pendataan Pelanggan
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-app-pelanggan" class="collapse hidden" aria-labelledby="menu-app">
+              <li>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customerkategori"
+                  class=""
+                >
+                  <span class="icon-[tabler--category-filled] size-5"></span>
+                  Kategori Pelanggan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customer" class="">
+                  <span class="icon-[tabler--user] size-5"></span>
+                  Data Pelanggan
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-bahan"
+              data-collapse="#menu-bahan-collapse"
+            >
+              <span class="icon-[tabler--needle-thread] size-5"></span>
+              Pendataan bahan baku
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-bahan-collapse" class="collapse hidden" aria-labelledby="menu-bahan">
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahankategori" class="">
+                  <span class="icon-[tabler--category] size-5"></span>
+                  Kategori bahan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahan" class="">
+                  <span class="icon-[lets-icons--materials] size-5"></span>
+                  Bahan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/keperluan" class="">
+                  <span class="icon-[tabler--needle-thread] size-5"></span>
+                  Keperluan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/supplier" class="">
+                  <span class="icon-[tabler--user-down] size-5"></span>
+                  Supplier
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahanmasuk" class="">
+                  <span class="icon-[tabler--package-import] size-5"></span>
+                  Bahan Masuk
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahankeluar" class="">
+                  <span class="icon-[tabler--package-export] size-5"></span>
+                  Bahan Keluar
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-produk"
+              data-collapse="#menu-produk-collapse"
+            >
+              <span class="icon-[tabler--package] size-5"></span>
+              Produk
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-produk-collapse" class="collapse hidden" aria-labelledby="menu-app">
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/prd/produkkategori" class="">
+                  <span class="icon-[tabler--category] size-5"></span>
+                  Kategori Produk
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/prd/produk" class="">
+                  <span class="icon-[tabler--package] size-5"></span>
+                  Data Produk
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-transaksi"
+              data-collapse="#menu-transaksi-collapse"
+            >
+              <span class="icon-[tabler--user-hexagon] size-5"></span>
+              Transaksi
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-transaksi-collapse" class="collapse hidden" aria-labelledby="menu-app">
+              <li>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/invoicesetting"
+                  class=""
+                >
+                  <span class="icon-[tabler--settings] size-5"></span>
+                  Invoice Setting
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/source" class="">
+                  <span class="icon-[tabler--brand-open-source] size-5"></span>
+                  Sumber Transaksi
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan" class="">
+                  <span class="icon-[material-symbols--point-of-sale] size-5"></span>
+                  Penjualan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/pemesanan" class="">
+                  <span class="icon-[tabler--brand-booking] size-5"></span>
+                  Pemesanan
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/manualinvoice"
+                  class=""
+                >
+                  <span class="icon-[tabler--brand-booking] size-5"></span>
+                  Manual Invoice
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/downpayment"
+                  class=""
+                >
+                  <span class="icon-[tabler--device-ipad-horizontal-down] size-5"></span>
+                  Down Payment
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
 
-
-<div class="dropdown relative inline-flex rtl:[--placement:bottom-end] justify-center px-4 py-10">
-    <button id="dropdown-avatar" type="button" class="dropdown-toggle" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-        <li class="dropdown-header gap-3">
-            <div class="avatar">
+        <div
+          class="dropdown relative inline-flex rtl:[--placement:bottom-end] justify-center px-4 py-10"
+        >
+          <button
+            id="dropdown-avatar"
+            type="button"
+            class="dropdown-toggle"
+            aria-haspopup="menu"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <li class="dropdown-header gap-3">
+              <div class="avatar">
                 <div class="w-10 rounded-full">
-                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png" alt="User Avatar" />
+                  <img
+                    src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png"
+                    alt="User Avatar"
+                  />
                 </div>
-            </div>
-            <div>
+              </div>
+              <div>
                 <h6 class="text-base-content text-base font-semibold">Guest</h6>
                 <small class="text-base-content/50 text-sm font-normal">guest@example.com</small>
-            </div>
-        </li>
-        <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
-    </button>
-    <ul class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-avatar">
-        <li class="dropdown-header gap-3">
-            <div class="avatar">
+              </div>
+            </li>
+            <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="dropdown-avatar"
+          >
+            <li class="dropdown-header gap-3">
+              <div class="avatar">
                 <div class="w-10 rounded-full">
-                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png" alt="User Avatar" />
+                  <img
+                    src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png"
+                    alt="User Avatar"
+                  />
                 </div>
-            </div>
-            <div>
+              </div>
+              <div>
                 <h6 class="text-base-content text-base font-semibold">Guest</h6>
                 <small class="text-base-content/50 text-sm font-normal">guest@example.com</small>
-            </div>
-        </li>
-        <li><a class="dropdown-item" href="#">My Profile</a></li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/setting" class=" dropdown-item ">
+              </div>
+            </li>
+            <li><a class="dropdown-item" href="#">My Profile</a></li>
+            <li>
+              <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/setting" class="dropdown-item">
                 <span class="icon-[tabler--settings] size-5"></span>
                 Setting
-            </a>
-        </li>
-        <li>
-            <form method="POST" action="https://sukmaaji.my.id/mycode/dashboard_umkm/logout">
-                <input type="hidden" name="_token" value="CpSQtHIqtBzkiFoBS84c5S5k01ed3tw3CWZk9jtF" autocomplete="off">                <a class="btn btn-danger mx-3 mt-2 d-block" :href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">
-                    <span class="icon-[tabler--logout] size-4"></span>Logout
+              </a>
+            </li>
+            <li>
+              <form method="POST" action="https://sukmaaji.my.id/mycode/dashboard_umkm/logout">
+                <input
+                  type="hidden"
+                  name="_token"
+                  value="CpSQtHIqtBzkiFoBS84c5S5k01ed3tw3CWZk9jtF"
+                  autocomplete="off"
+                />
+                <a
+                  class="btn btn-danger mx-3 mt-2 d-block"
+                  :href="route('logout')"
+                  onclick="event.preventDefault(); this.closest('form').submit();"
+                >
+                  <span class="icon-[tabler--logout] size-4"></span>Logout
                 </a>
-            </form>
-        </li>
-    </ul>
-</div>
+              </form>
+            </li>
+          </ul>
         </div>
+      </div>
     </aside>
     <main id="main-content" class="">
-        <div class="sm:ml-64">
-                            <div class="card-header">
-                    <h2 class="font-semibold text-3xl text-secondary">
-                        Dashboard
-                    </h2>
-                </div>
-                        <div class="card-body">
-        <!-- Filter Form -->
-        <div class="mb-6 p-4 bg-white rounded-lg shadow">
-            <form action="https://sukmaaji.my.id/mycode/dashboard_umkm" method="GET" class="flex flex-col sm:flex-row items-center gap-4">
-                <div class="w-full sm:w-auto">
-                    <label for="year" class="block text-sm font-medium text-gray-700">Tahun</label>
-                    <select name="year" id="year" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
-                        <option value="">Semua Tahun</option>
-                                                    <option value="2025" >2025</option>
-                                            </select>
-                </div>
-                <div class="w-full sm:w-auto">
-                    <label for="month" class="block text-sm font-medium text-gray-700">Bulan</label>
-                    <select name="month" id="month" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
-                        <option value="">Semua Bulan</option>
-                                                    <option value="1" >Januari</option>
-                                                    <option value="2" >Februari</option>
-                                                    <option value="3" >Maret</option>
-                                                    <option value="4" >April</option>
-                                                    <option value="5" >Mei</option>
-                                                    <option value="6" >Juni</option>
-                                                    <option value="7" >Juli</option>
-                                                    <option value="8" >Agustus</option>
-                                                    <option value="9" >September</option>
-                                                    <option value="10" >Oktober</option>
-                                                    <option value="11" >November</option>
-                                                    <option value="12" >Desember</option>
-                                            </select>
-                </div>
-                <div class="flex items-center gap-2 mt-2 sm:mt-6">
-                    <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                        Filter
-                    </button>
-                    <a href="https://sukmaaji.my.id/mycode/dashboard_umkm" class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                        Reset
-                    </a>
-                </div>
-            </form>
+      <div class="sm:ml-64">
+        <div class="card-header">
+          <h2 class="font-semibold text-3xl text-secondary">Dashboard</h2>
         </div>
+        <div class="card-body">
+          <!-- Filter Form -->
+          <div class="mb-6 p-4 bg-white rounded-lg shadow">
+            <form
+              action="https://sukmaaji.my.id/mycode/dashboard_umkm"
+              method="GET"
+              class="flex flex-col sm:flex-row items-center gap-4"
+            >
+              <div class="w-full sm:w-auto">
+                <label for="year" class="block text-sm font-medium text-gray-700">Tahun</label>
+                <select
+                  name="year"
+                  id="year"
+                  class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+                >
+                  <option value="">Semua Tahun</option>
+                  <option value="2025">2025</option>
+                </select>
+              </div>
+              <div class="w-full sm:w-auto">
+                <label for="month" class="block text-sm font-medium text-gray-700">Bulan</label>
+                <select
+                  name="month"
+                  id="month"
+                  class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+                >
+                  <option value="">Semua Bulan</option>
+                  <option value="1">Januari</option>
+                  <option value="2">Februari</option>
+                  <option value="3">Maret</option>
+                  <option value="4">April</option>
+                  <option value="5">Mei</option>
+                  <option value="6">Juni</option>
+                  <option value="7">Juli</option>
+                  <option value="8">Agustus</option>
+                  <option value="9">September</option>
+                  <option value="10">Oktober</option>
+                  <option value="11">November</option>
+                  <option value="12">Desember</option>
+                </select>
+              </div>
+              <div class="flex items-center gap-2 mt-2 sm:mt-6">
+                <button
+                  type="submit"
+                  class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                >
+                  Filter
+                </button>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm"
+                  class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                  Reset
+                </a>
+              </div>
+            </form>
+          </div>
 
-        <!-- Judul Dinamis -->
-        <h2 class="text-xl font-semibold text-gray-800 mb-4">
-                            Menampilkan Data Keseluruhan (All-Time)
-                    </h2>
+          <!-- Judul Dinamis -->
+          <h2 class="text-xl font-semibold text-gray-800 mb-4">
+            Menampilkan Data Keseluruhan (All-Time)
+          </h2>
 
-
-        <!-- Summary Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+          <!-- Summary Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
             <!-- Total Revenue Card -->
             <div class="bg-white rounded-lg shadow p-6">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-gray-500 text-sm font-medium">Total Revenue</p>
-                        <h3 class="text-2xl font-bold text-gray-800">
-                            Rp 0
-                        </h3>
-                    </div>
-                    <div class="bg-blue-100 p-3 rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-gray-500 text-sm font-medium">Total Revenue</p>
+                  <h3 class="text-2xl font-bold text-gray-800">Rp 0</h3>
                 </div>
-                <div class="mt-4">
-                    <span class="text-green-500 text-sm font-medium">
-                                                    All-Time Transactions
-                                            </span>
+                <div class="bg-blue-100 p-3 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-blue-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
                 </div>
+              </div>
+              <div class="mt-4">
+                <span class="text-green-500 text-sm font-medium"> All-Time Transactions </span>
+              </div>
             </div>
-
-            <!-- Total Customers Card -->
-            <div class="bg-white rounded-lg shadow p-6">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-gray-500 text-sm font-medium">Total Customers</p>
-                        <h3 class="text-2xl font-bold text-gray-800">0</h3>
-                    </div>
-                    <div class="bg-green-100 p-3 rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <span class="text-green-500 text-sm font-medium">Total Data</span>
-                </div>
-            </div>
-
             <!-- Total Suppliers Card -->
             <div class="bg-white rounded-lg shadow p-6">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-gray-500 text-sm font-medium">Total Suppliers</p>
-                        <h3 class="text-2xl font-bold text-gray-800">0</h3>
-                    </div>
-                    <div class="bg-purple-100 p-3 rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                        </svg>
-                    </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-gray-500 text-sm font-medium">Total Suppliers</p>
+                  <h3 class="text-2xl font-bold text-gray-800">0</h3>
                 </div>
-                <div class="mt-4">
-                    <span class="text-purple-500 text-sm font-medium">Total Data</span>
+                <div class="bg-purple-100 p-3 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-purple-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                    />
+                  </svg>
                 </div>
+              </div>
+              <div class="mt-4">
+                <span class="text-purple-500 text-sm font-medium">Total Data</span>
+              </div>
             </div>
 
             <!-- Total Materials Card -->
             <div class="bg-white rounded-lg shadow p-6">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-gray-500 text-sm font-medium">Total Materials</p>
-                        <h3 class="text-2xl font-bold text-gray-800">0</h3>
-                    </div>
-                    <div class="bg-orange-100 p-3 rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                        </svg>
-                    </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-gray-500 text-sm font-medium">Total Materials</p>
+                  <h3 class="text-2xl font-bold text-gray-800">0</h3>
                 </div>
-                <div class="mt-4">
-                    <span class="text-orange-500 text-sm font-medium">Total Data</span>
+                <div class="bg-orange-100 p-3 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-orange-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                    />
+                  </svg>
                 </div>
+              </div>
+              <div class="mt-4">
+                <span class="text-orange-500 text-sm font-medium">Total Data</span>
+              </div>
             </div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-    <!-- Total Customers Card -->
-    <div class="bg-white rounded-lg shadow p-6">
-        <div class="flex items-center justify-between">
-            <div>
-                <p class="text-green-500 text-sm font-medium">Total Customers</p>
-                <h3 class="text-2xl font-bold text-gray-800">0</h3>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+            <!-- Total Customers Card -->
+            <div class="bg-white rounded-lg shadow p-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-green-500 text-sm font-medium">Total Customers</p>
+                  <h3 class="text-2xl font-bold text-gray-800">0</h3>
+                </div>
+                <div class="bg-green-100 p-3 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-green-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mt-4">
+                <span class="text-green-500 text-sm font-medium">Customer Database</span>
+              </div>
             </div>
-            <div class="bg-green-100 p-3 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
+            <!-- Total Customers Card -->
+            <div class="bg-white rounded-lg shadow p-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-gray-500 text-sm font-medium">Total Customers Laki-laki</p>
+                  <h3 class="text-2xl font-bold text-gray-800">0</h3>
+                </div>
+                <div class="bg-green-100 p-3 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-green-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mt-4">
+                <span class="text-blue-500 text-sm font-medium">Customer Laki-laki Database</span>
+              </div>
             </div>
-        </div>
-        <div class="mt-4">
-            <span class="text-green-500 text-sm font-medium">Customer Database</span>
-        </div>
-    </div>
-    <!-- Total Customers Card -->
-    <div class="bg-white rounded-lg shadow p-6">
-        <div class="flex items-center justify-between">
-            <div>
-                <p class="text-gray-500 text-sm font-medium">Total Customers Laki-laki</p>
-                <h3 class="text-2xl font-bold text-gray-800">0</h3>
+            <div class="bg-white rounded-lg shadow p-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-gray-500 text-sm font-medium">Total Customers Perempuan</p>
+                  <h3 class="text-2xl font-bold text-gray-800">0</h3>
+                </div>
+                <div class="bg-green-100 p-3 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-green-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mt-4">
+                <span class="text-blue-500 text-sm font-medium">Customer Perempuan Database</span>
+              </div>
             </div>
-            <div class="bg-green-100 p-3 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
+            <div class="bg-white rounded-lg shadow p-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-gray-500 text-sm font-medium">
+                    Total Customers Instansi/ (gender tidak terdata)
+                  </p>
+                  <h3 class="text-2xl font-bold text-gray-800">0</h3>
+                </div>
+                <div class="bg-green-100 p-3 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-green-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mt-4">
+                <span class="text-blue-500 text-sm font-medium">Customer Database</span>
+              </div>
             </div>
-        </div>
-        <div class="mt-4">
-            <span class="text-blue-500 text-sm font-medium">Customer Laki-laki Database</span>
-        </div>
-    </div>
-    <div class="bg-white rounded-lg shadow p-6">
-        <div class="flex items-center justify-between">
-            <div>
-                <p class="text-gray-500 text-sm font-medium">Total Customers Perempuan</p>
-                <h3 class="text-2xl font-bold text-gray-800">0</h3>
-            </div>
-            <div class="bg-green-100 p-3 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-            </div>
-        </div>
-        <div class="mt-4">
-            <span class="text-blue-500 text-sm font-medium">Customer Perempuan Database</span>
-        </div>
-    </div>
-    <div class="bg-white rounded-lg shadow p-6">
-        <div class="flex items-center justify-between">
-            <div>
-                <p class="text-gray-500 text-sm font-medium">Total Customers Instansi/ (gender tidak terdata)</p>
-                <h3 class="text-2xl font-bold text-gray-800">0</h3>
-            </div>
-            <div class="bg-green-100 p-3 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-            </div>
-        </div>
-        <div class="mt-4">
-            <span class="text-blue-500 text-sm font-medium">Customer Database</span>
-        </div>
-    </div>
-
-</div>
-        <!-- Revenue Breakdown -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+          </div>
+          <!-- Revenue Breakdown -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
             <!-- Cards for Penjualan, Pemesanan, Manual Invoice -->
             <div class="bg-white rounded-lg shadow p-6">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-lg font-semibold text-gray-800">Sales Revenue</h3><span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Penjualan</span>
-                </div>
-                <h4 class="text-2xl font-bold text-gray-800 mb-2">Rp 0</h4>
-                <p class="text-gray-500 text-sm">Revenue from direct sales in selected period</p>
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Sales Revenue</h3>
+                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                  >Penjualan</span
+                >
+              </div>
+              <h4 class="text-2xl font-bold text-gray-800 mb-2">Rp 0</h4>
+              <p class="text-gray-500 text-sm">Revenue from direct sales in selected period</p>
             </div>
             <div class="bg-white rounded-lg shadow p-6">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-lg font-semibold text-gray-800">Orders Revenue</h3><span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Pemesanan</span>
-                </div>
-                <h4 class="text-2xl font-bold text-gray-800 mb-2">Rp 0</h4>
-                <p class="text-gray-500 text-sm">Revenue from orders in selected period</p>
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Orders Revenue</h3>
+                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                  >Pemesanan</span
+                >
+              </div>
+              <h4 class="text-2xl font-bold text-gray-800 mb-2">Rp 0</h4>
+              <p class="text-gray-500 text-sm">Revenue from orders in selected period</p>
             </div>
             <div class="bg-white rounded-lg shadow p-6">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-lg font-semibold text-gray-800">Manual Invoices</h3><span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Manual</span>
-                </div>
-                <h4 class="text-2xl font-bold text-gray-800 mb-2">Rp 0</h4>
-                <p class="text-gray-500 text-sm">Revenue from manual invoices in selected period</p>
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Manual Invoices</h3>
+                <span
+                  class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                  >Manual</span
+                >
+              </div>
+              <h4 class="text-2xl font-bold text-gray-800 mb-2">Rp 0</h4>
+              <p class="text-gray-500 text-sm">Revenue from manual invoices in selected period</p>
             </div>
-        </div>
-        <!-- Charts Section -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+          </div>
+          <!-- Charts Section -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
             <!-- Revenue Chart -->
             <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-lg font-semibold text-gray-800 mb-4">
-                                            Monthly Revenue (Last 3 Years)
-                                    </h3>
-                <div id="revenueChart"></div>
+              <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                Monthly Revenue (Last 3 Years)
+              </h3>
+              <div id="revenueChart"></div>
             </div>
 
             <!-- Transaction Types Chart -->
             <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-lg font-semibold text-gray-800 mb-4">
-                                            All-Time Revenue by Type
-                                    </h3>
-                <div id="transactionTypeChart"></div>
+              <h3 class="text-lg font-semibold text-gray-800 mb-4">All-Time Revenue by Type</h3>
+              <div id="transactionTypeChart"></div>
             </div>
-        </div>
-        <!-- Recent Transactions -->
-        <div class="bg-white rounded-lg shadow overflow-hidden mb-6">
+          </div>
+          <!-- Recent Transactions -->
+          <div class="bg-white rounded-lg shadow overflow-hidden mb-6">
             <div class="p-6 border-b border-gray-200">
-                <h3 class="text-lg font-semibold text-gray-800">
-                                            Recent Transactions (All-Time)
-                                    </h3>
+              <h3 class="text-lg font-semibold text-gray-800">Recent Transactions (All-Time)</h3>
             </div>
             <div class="overflow-x-auto">
-                <table class="min-w-full divide-y divide-gray-200">
-                    <thead class="bg-gray-50">
-                        <tr>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Invoice</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Customer</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Type</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Amount</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody class="bg-white divide-y divide-gray-200">
-                                                    <tr>
-                                <td colspan="6" class="px-6 py-4 text-center text-gray-500">No transactions found for this period.</td>
-                            </tr>
-                                            </tbody>
-                </table>
+              <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                  <tr>
+                    <th
+                      scope="col"
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Invoice
+                    </th>
+                    <th
+                      scope="col"
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Date
+                    </th>
+                    <th
+                      scope="col"
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Customer
+                    </th>
+                    <th
+                      scope="col"
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Type
+                    </th>
+                    <th
+                      scope="col"
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Amount
+                    </th>
+                    <th
+                      scope="col"
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Status
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">INV-20250901-001</td>
+                    <td class="px-6 py-4 whitespace-nowrap">2025-09-01</td>
+                    <td class="px-6 py-4 whitespace-nowrap">PT. Sukses Makmur</td>
+                    <td class="px-6 py-4 whitespace-nowrap">Penjualan</td>
+                    <td class="px-6 py-4 whitespace-nowrap">Rp 12.000.000</td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="text-green-600">Paid</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">INV-20250902-002</td>
+                    <td class="px-6 py-4 whitespace-nowrap">2025-09-02</td>
+                    <td class="px-6 py-4 whitespace-nowrap">CV. Maju Jaya</td>
+                    <td class="px-6 py-4 whitespace-nowrap">Pemesanan</td>
+                    <td class="px-6 py-4 whitespace-nowrap">Rp 8.500.000</td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="text-yellow-600">Pending</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
         </div>
-    </div>
-            <footer class="footer footer-center bg-base-100">
-    <aside>
-        <p>&copy; 2025 Dashboard UMKM - SukmaAjiDigital.</p>
-    </aside>
-</footer>
-        </div>
+        <footer class="footer footer-center bg-base-100">
+          <aside>
+            <p>
+              &copy; 2025 Dashboard UMKM -
+              <a href="https://sukmaaji.my.id" target="_blank" rel="noopener noreferrer"
+                >SukmaAjiDigital</a
+              >.
+            </p>
+          </aside>
+        </footer>
+      </div>
     </main>
-    <link rel="modulepreload" href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dc0IQJ--.js" /><script type="module" src="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dc0IQJ--.js"></script>    <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/jquery/dist/jquery.min.js"></script>
+    <link
+      rel="modulepreload"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dc0IQJ--.js"
+    />
+    <script
+      type="module"
+      src="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dc0IQJ--.js"
+    ></script>
+    <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/jquery/dist/jquery.min.js"></script>
     <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/select2.min.js"></script>
-    <script type="text/javascript" src="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/datatable/datatable.min.js"></script>
-    <script type="text/javascript" src="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/loadform.js"></script>
+    <script
+      type="text/javascript"
+      src="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/datatable/datatable.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/loadform.js"
+    ></script>
     <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/flowbite/flowbite.min.js"></script>
     <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/alert/sweetalert2.all.min.js"></script>
-            <!-- ApexCharts -->
-        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- ApexCharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-        <script>
-            // Revenue Chart (Daily/Monthly)
-            var revenueOptions = {
-                series: [{
-                    name: 'Revenue',
-                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]                }],
-                chart: {
-                    height: 350,
-                    type: 'area',
-                    toolbar: {
-                        show: false
-                    }
-                },
-                colors: ['#3B82F6'],
-                dataLabels: {
-                    enabled: false
-                },
-                stroke: {
-                    curve: 'smooth',
-                    width: 2
-                },
-                xaxis: {
-                    categories: ["Sep 2022","Oct 2022","Nov 2022","Dec 2022","Jan 2023","Feb 2023","Mar 2023","Apr 2023","May 2023","Jun 2023","Jul 2023","Aug 2023","Sep 2023","Oct 2023","Nov 2023","Dec 2023","Jan 2024","Feb 2024","Mar 2024","Apr 2024","May 2024","Jun 2024","Jul 2024","Aug 2024","Sep 2024","Oct 2024","Nov 2024","Dec 2024","Jan 2025","Feb 2025","Mar 2025","Apr 2025","May 2025","Jun 2025","Jul 2025","Aug 2025","Sep 2025"],
-                    labels: {
-                        style: {
-                            colors: '#6B7280',
-                            fontSize: '12px',
-                            fontFamily: 'Inter, sans-serif'
-                        }
-                    }
-                },
-                yaxis: {
-                    labels: {
-                        formatter: function(value) {
-                            return 'Rp ' + value.toLocaleString('id-ID');
-                        },
-                        style: {
-                            colors: '#6B7280',
-                            fontSize: '12px',
-                            fontFamily: 'Inter, sans-serif'
-                        }
-                    }
-                },
-                tooltip: {
-                    y: {
-                        formatter: function(value) {
-                            return 'Rp ' + value.toLocaleString('id-ID');
-                        }
-                    }
-                },
-                grid: {
-                    borderColor: '#E5E7EB',
-                    strokeDashArray: 4,
-                    yaxis: {
-                        lines: {
-                            show: true
-                        }
-                    }
-                }
-            };
-            var revenueChart = new ApexCharts(document.querySelector("#revenueChart"), revenueOptions);
-            revenueChart.render();
-
-            // Transaction Type Chart
-            var transactionTypeOptions = {
-                series: [{
-                    name: 'Revenue',
-                    data: [0, 0, 0]
-                }],
-                chart: {
-                    type: 'bar',
-                    height: 350,
-                    toolbar: {
-                        show: false
-                    }
-                },
-                plotOptions: {
-                    bar: {
-                        borderRadius: 4,
-                        horizontal: false,
-                        columnWidth: '55%',
-                    }
-                },
-                dataLabels: {
-                    enabled: false
-                },
-                colors: ['#3B82F6', '#10B981', '#8B5CF6'],
-                xaxis: {
-                    categories: ['Penjualan', 'Pemesanan', 'Manual Invoice'],
-                    labels: {
-                        style: {
-                            colors: '#6B7280',
-                            fontSize: '12px',
-                            fontFamily: 'Inter, sans-serif'
-                        }
-                    }
-                },
-                yaxis: {
-                    labels: {
-                        formatter: function(value) {
-                            return 'Rp ' + value.toLocaleString('id-ID');
-                        },
-                        style: {
-                            colors: '#6B7280',
-                            fontSize: '12px',
-                            fontFamily: 'Inter, sans-serif'
-                        }
-                    }
-                },
-                tooltip: {
-                    y: {
-                        formatter: function(value) {
-                            return 'Rp ' + value.toLocaleString('id-ID');
-                        }
-                    }
-                },
-                grid: {
-                    borderColor: '#E5E7EB',
-                    strokeDashArray: 4,
-                    yaxis: {
-                        lines: {
-                            show: true
-                        }
-                    }
-                }
-            };
-            var transactionTypeChart = new ApexCharts(document.querySelector("#transactionTypeChart"), transactionTypeOptions);
-            transactionTypeChart.render();
-        </script>
-            
     <script>
-        $(document).ready(function() {
-            $('.select2').select2({
-                placeholder: function() {
-                    return $(this).data('placeholder') || "Select an option";
-                },
-                allowClear: true,
-                width: '100%'
-            });
+      // Revenue Chart (Daily/Monthly)
+      var revenueOptions = {
+        series: [
+          {
+            name: "Revenue",
+            data: [
+              1200000, 1500000, 1800000, 2000000, 1700000, 2100000, 2500000, 2300000, 2200000,
+              2400000, 2600000, 2700000, 2800000, 2900000, 3000000, 3100000, 3200000, 3300000,
+              3400000, 3500000, 3600000, 3700000, 3800000, 3900000, 4000000, 4100000, 4200000,
+              4300000, 4400000, 4500000, 4600000, 4700000, 4800000, 4900000, 5000000, 5100000,
+              5200000,
+            ],
+          },
+        ],
+        chart: {
+          height: 350,
+          type: "area",
+          toolbar: {
+            show: false,
+          },
+        },
+        colors: ["#3B82F6"],
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          curve: "smooth",
+          width: 2,
+        },
+        xaxis: {
+          categories: [
+            "Sep 2022",
+            "Oct 2022",
+            "Nov 2022",
+            "Dec 2022",
+            "Jan 2023",
+            "Feb 2023",
+            "Mar 2023",
+            "Apr 2023",
+            "May 2023",
+            "Jun 2023",
+            "Jul 2023",
+            "Aug 2023",
+            "Sep 2023",
+            "Oct 2023",
+            "Nov 2023",
+            "Dec 2023",
+            "Jan 2024",
+            "Feb 2024",
+            "Mar 2024",
+            "Apr 2024",
+            "May 2024",
+            "Jun 2024",
+            "Jul 2024",
+            "Aug 2024",
+            "Sep 2024",
+            "Oct 2024",
+            "Nov 2024",
+            "Dec 2024",
+            "Jan 2025",
+            "Feb 2025",
+            "Mar 2025",
+            "Apr 2025",
+            "May 2025",
+            "Jun 2025",
+            "Jul 2025",
+            "Aug 2025",
+            "Sep 2025",
+          ],
+          labels: {
+            style: {
+              colors: "#6B7280",
+              fontSize: "12px",
+              fontFamily: "Inter, sans-serif",
+            },
+          },
+        },
+        yaxis: {
+          labels: {
+            formatter: function (value) {
+              return "Rp " + value.toLocaleString("id-ID");
+            },
+            style: {
+              colors: "#6B7280",
+              fontSize: "12px",
+              fontFamily: "Inter, sans-serif",
+            },
+          },
+        },
+        tooltip: {
+          y: {
+            formatter: function (value) {
+              return "Rp " + value.toLocaleString("id-ID");
+            },
+          },
+        },
+        grid: {
+          borderColor: "#E5E7EB",
+          strokeDashArray: 4,
+          yaxis: {
+            lines: {
+              show: true,
+            },
+          },
+        },
+      };
+      var revenueChart = new ApexCharts(document.querySelector("#revenueChart"), revenueOptions);
+      revenueChart.render();
+
+      // Transaction Type Chart
+      var transactionTypeOptions = {
+        series: [
+          {
+            name: "Revenue",
+            data: [35000000, 22000000, 12000000],
+          },
+        ],
+        chart: {
+          type: "bar",
+          height: 350,
+          toolbar: {
+            show: false,
+          },
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 4,
+            horizontal: false,
+            columnWidth: "55%",
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        colors: ["#3B82F6", "#10B981", "#8B5CF6"],
+        xaxis: {
+          categories: ["Penjualan", "Pemesanan", "Manual Invoice"],
+          labels: {
+            style: {
+              colors: "#6B7280",
+              fontSize: "12px",
+              fontFamily: "Inter, sans-serif",
+            },
+          },
+        },
+        yaxis: {
+          labels: {
+            formatter: function (value) {
+              return "Rp " + value.toLocaleString("id-ID");
+            },
+            style: {
+              colors: "#6B7280",
+              fontSize: "12px",
+              fontFamily: "Inter, sans-serif",
+            },
+          },
+        },
+        tooltip: {
+          y: {
+            formatter: function (value) {
+              return "Rp " + value.toLocaleString("id-ID");
+            },
+          },
+        },
+        grid: {
+          borderColor: "#E5E7EB",
+          strokeDashArray: 4,
+          yaxis: {
+            lines: {
+              show: true,
+            },
+          },
+        },
+      };
+      var transactionTypeChart = new ApexCharts(
+        document.querySelector("#transactionTypeChart"),
+        transactionTypeOptions
+      );
+      transactionTypeChart.render();
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".select2").select2({
+          placeholder: function () {
+            return $(this).data("placeholder") || "Select an option";
+          },
+          allowClear: true,
+          width: "100%",
         });
+      });
     </script>
     <script>
-        const loading = document.getElementById('loading-screen');
+      const loading = document.getElementById("loading-screen");
 
-        // Saat halaman dimuat selesai
-        window.addEventListener('load', () => {
-            if (loading) {
-                loading.classList.add('opacity-0');
-                setTimeout(() => loading.classList.add('hidden'), 1);
-            }
-        });
+      // Saat halaman dimuat selesai
+      window.addEventListener("load", () => {
+        if (loading) {
+          loading.classList.add("opacity-0");
+          setTimeout(() => loading.classList.add("hidden"), 1);
+        }
+      });
 
-        // Saat pengguna meninggalkan halaman (navigasi ke link lain atau reload)
-        window.addEventListener('beforeunload', () => {
-            if (loading) {
-                loading.classList.remove('hidden', 'opacity-0');
-                loading.classList.add('opacity-100');
-            }
-        });
+      // Saat pengguna meninggalkan halaman (navigasi ke link lain atau reload)
+      window.addEventListener("beforeunload", () => {
+        if (loading) {
+          loading.classList.remove("hidden", "opacity-0");
+          loading.classList.add("opacity-100");
+        }
+      });
     </script>
-    <script>
-            </script>
-</body>
-
+    <script></script>
+  </body>
 </html>

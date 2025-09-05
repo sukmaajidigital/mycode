@@ -1,573 +1,764 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light" dir="ltr">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="title" content="Dashboard - DASHBOARDUMKM">
-    <meta property="og:title" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="title" content="Dashboard - DASHBOARDUMKM" />
+    <meta property="og:title" content="" />
     <title>Admin - dashboard umkm</title>
-    <meta name="description" content="ini adalah aplikasi dashboard untuk umkm, dengan kelengkapan yang cukup lengkap untuk sekelas umkm mikro, untuk manajemen dan lain lain">
-    <meta name="keywords" content="ini adalah aplikasi dashboard untuk umkm, dengan kelengkapan yang cukup lengkap untuk sekelas umkm mikro, untuk manajemen dan lain lain">
-    <meta name="author" content="muhammad aji sukma">
-    <meta name="keyphrases" content="dashboard umkm, umkm, sistem integrasi, admin panel, admin">
-    <meta name="classification" content="dashboard umkm, umkm, sistem integrasi, admin panel, admin">
-    <link rel="canonical" href="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta
+      name="description"
+      content="ini adalah aplikasi dashboard untuk umkm, dengan kelengkapan yang cukup lengkap untuk sekelas umkm mikro, untuk manajemen dan lain lain"
+    />
+    <meta
+      name="keywords"
+      content="ini adalah aplikasi dashboard untuk umkm, dengan kelengkapan yang cukup lengkap untuk sekelas umkm mikro, untuk manajemen dan lain lain"
+    />
+    <meta name="author" content="muhammad aji sukma" />
+    <meta name="keyphrases" content="dashboard umkm, umkm, sistem integrasi, admin panel, admin" />
+    <meta
+      name="classification"
+      content="dashboard umkm, umkm, sistem integrasi, admin panel, admin"
+    />
+    <link rel="canonical" href="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
 
-    <meta property="og:type" content="article">
-    <meta property="og:site_name" content="Admin - dashboard umkm">
-    <meta property="og:locale" content="id_ID">
-    <meta property="og:url" content="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs">
-    <meta property="og:title" content="Admin - dashboard umkm">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png">
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Admin - dashboard umkm" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:url" content="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs" />
+    <meta property="og:title" content="Admin - dashboard umkm" />
+    <meta property="og:description" content="" />
+    <meta
+      property="og:image"
+      content="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png"
+    />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs">
-    <meta name="twitter:creator" content="muhammad aji sukma">
-    <meta name="twitter:url" content="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs">
-    <meta name="twitter:title" content="Admin - dashboard umkm">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png">
-    <meta name="robots" content="all">
-    <meta property="og:locale" content="id">
-    <meta property="og:locale:alternate" content="en">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs" />
+    <meta name="twitter:creator" content="muhammad aji sukma" />
+    <meta name="twitter:url" content="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs" />
+    <meta name="twitter:title" content="Admin - dashboard umkm" />
+    <meta name="twitter:description" content="" />
+    <meta
+      name="twitter:image"
+      content="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png"
+    />
+    <meta name="robots" content="all" />
+    <meta property="og:locale" content="id" />
+    <meta property="og:locale:alternate" content="en" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png"
+    />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Dashboard - DASHBOARDUMKM">
-    <link rel="icon" type="image/png" href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#ffc107">
-    <meta name="theme-color" content="#ffc107">
-    <link rel="shortcut icon" type="image/png" href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Dashboard - DASHBOARDUMKM" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffc107" />
+    <meta name="theme-color" content="#ffc107" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png"
+    />
     <link rel="canonical" href="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs" />
 
     <!-- Favicon -->
     <title>Dashboard UMKM</title>
-    <link rel="shortcut icon" type="image/png" href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/icons/icon.png"
+    />
 
     <!-- Stylesheets -->
-    <link rel="preload" as="style" href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dbaup-oA.css" /><link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dbaup-oA.css" />    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/datatable/datatable.css" />
-    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/select2.min.css" />
-    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/custom.select2.css" />
-    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/flowbite/flowbite.min.css" />
-    <link rel="stylesheet" href="https://sukmaaji.my.id/mycode/dashboard_umkm/alert/sweetalert2.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dbaup-oA.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dbaup-oA.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/datatable/datatable.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/custom.select2.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/flowbite/flowbite.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/alert/sweetalert2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+    />
     <style>
-        #map {
-            height: 65vh;
-            /* Tinggi peta bisa disesuaikan */
-            width: 100%;
-            border-radius: 0.5rem;
-        }
+      #map {
+        height: 65vh;
+        /* Tinggi peta bisa disesuaikan */
+        width: 100%;
+        border-radius: 0.5rem;
+      }
     </style>
-</head>
+  </head>
 
-<body class="flex flex-col min-h-screen">
+  <body class="flex flex-col min-h-screen">
     <!-- resources/views/components/loading-screen.blade.php -->
-<div id="loading-screen" class="inset-0 z-50 flex items-center justify-center bg-transparent transition-opacity duration-300">
-    <span class="loading loading-spinner text-primary"></span>
-</div>
-    <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-        <span class="sr-only">Open sidebar</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
-        </svg>
+    <div
+      id="loading-screen"
+      class="inset-0 z-50 flex items-center justify-center bg-transparent transition-opacity duration-300"
+    >
+      <span class="loading loading-spinner text-primary"></span>
+    </div>
+    <button
+      data-drawer-target="logo-sidebar"
+      data-drawer-toggle="logo-sidebar"
+      aria-controls="logo-sidebar"
+      type="button"
+      class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    >
+      <span class="sr-only">Open sidebar</span>
+      <svg
+        class="w-6 h-6"
+        aria-hidden="true"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+        ></path>
+      </svg>
     </button>
 
-    <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-        <div class="h-full px-3 py-4 overflow-y-auto bg-base-100">
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm" class="flex items-center ps-2.5 mb-5">
-                <img src="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png" class="h-6 me-3 sm:h-7" alt="Dashboard UMKM" />
-                <span class="self-center text-xl font-semibold whitespace-nowrap">Dashboard UMKM</span>
-            </a>
-            <ul class="menu space-y-1 ">
-    
-    
-    <li>
-        <a href="https://sukmaaji.my.id/mycode/dashboard_umkm" class=" ">
-            <span class="icon-[tabler--home-filled] size-5"></span>
-            Dashboard
+    <aside
+      id="logo-sidebar"
+      class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+      aria-label="Sidebar"
+    >
+      <div class="h-full px-3 py-4 overflow-y-auto bg-base-100">
+        <a
+          href="https://sukmaaji.my.id/mycode/dashboard_umkm"
+          class="flex items-center ps-2.5 mb-5"
+        >
+          <img
+            src="https://sukmaaji.my.id/mycode/dashboard_umkm/storage/logo/logo.png"
+            class="h-6 me-3 sm:h-7"
+            alt="Dashboard UMKM"
+          />
+          <span class="self-center text-xl font-semibold whitespace-nowrap">Dashboard UMKM</span>
         </a>
-    </li>
-    
-    
-    
-    
-    
-    <li>
-    <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs" class="active ">
-        <span class="icon-[tabler--home] size-5"></span>
-        visitor Logs
-    </a>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-app" data-collapse="#menu-app-collapse">
-        <span class="icon-[tabler--user-hexagon] size-5"></span>
-        Blog
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-app-collapse" class="collapse hidden" aria-labelledby="menu-app">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/blog" class="">
-                <span class="icon-[tabler--category-filled] size-5"></span>
-                Blog
+        <ul class="menu space-y-1">
+          <li>
+            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm" class=" ">
+              <span class="icon-[tabler--home-filled] size-5"></span>
+              Dashboard
             </a>
-        </li>
-    </ul>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-app" data-collapse="#menu-app-pelanggan">
-        <span class="icon-[tabler--user-hexagon] size-5"></span>
-        Pendataan Pelanggan
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-app-pelanggan" class="collapse hidden" aria-labelledby="menu-app">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customerkategori" class="">
-                <span class="icon-[tabler--category-filled] size-5"></span>
-                Kategori Pelanggan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customer" class="">
-                <span class="icon-[tabler--user] size-5"></span>
-                Data Pelanggan
-            </a>
-        </li>
-    </ul>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-bahan" data-collapse="#menu-bahan-collapse">
-        <span class="icon-[tabler--needle-thread] size-5"></span>
-        Pendataan bahan baku
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-bahan-collapse" class="collapse hidden" aria-labelledby="menu-bahan">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahankategori" class="">
-                <span class="icon-[tabler--category] size-5"></span>
-                Kategori bahan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahan" class="">
-                <span class="icon-[lets-icons--materials] size-5"></span>
-                Bahan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/keperluan" class="">
-                <span class="icon-[tabler--needle-thread] size-5"></span>
-                Keperluan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/supplier" class="">
-                <span class="icon-[tabler--user-down] size-5"></span>
-                Supplier
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahanmasuk" class="">
-                <span class="icon-[tabler--package-import] size-5"></span>
-                Bahan Masuk
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahankeluar" class="">
-                <span class="icon-[tabler--package-export] size-5"></span>
-                Bahan Keluar
-            </a>
-        </li>
-    </ul>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-produk" data-collapse="#menu-produk-collapse">
-        <span class="icon-[tabler--package] size-5"></span>
-        Produk
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-produk-collapse" class="collapse hidden" aria-labelledby="menu-app">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/prd/produkkategori" class="">
-                <span class="icon-[tabler--category] size-5"></span>
-                Kategori Produk
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/prd/produk" class="">
-                <span class="icon-[tabler--package] size-5"></span>
-                Data Produk
-            </a>
-        </li>
-    </ul>
-</li>
-<li class="space-y-0.5">
-    <a class="collapse-toggle collapse-open:bg-base-content/10" id="menu-transaksi" data-collapse="#menu-transaksi-collapse">
-        <span class="icon-[tabler--user-hexagon] size-5"></span>
-        Transaksi
-        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"></span>
-    </a>
-    <ul id="menu-transaksi-collapse" class="collapse hidden" aria-labelledby="menu-app">
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/invoicesetting" class="">
-                <span class="icon-[tabler--settings] size-5"></span>
-                Invoice Setting
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/source" class="">
-                <span class="icon-[tabler--brand-open-source] size-5"></span>
-                Sumber Transaksi
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan" class="">
-                <span class="icon-[material-symbols--point-of-sale] size-5"></span>
-                Penjualan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/pemesanan" class="">
-                <span class="icon-[tabler--brand-booking] size-5"></span>
-                Pemesanan
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/manualinvoice" class="">
-                <span class="icon-[tabler--brand-booking] size-5"></span>
-                Manual Invoice
-            </a>
-        </li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/downpayment" class="">
-                <span class="icon-[tabler--device-ipad-horizontal-down] size-5"></span>
-                Down Payment
-            </a>
-        </li>
-    </ul>
-</li>
-    
-    
-</ul>
+          </li>
 
+          <li>
+            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/visitor-logs" class="active">
+              <span class="icon-[tabler--home] size-5"></span>
+              visitor Logs
+            </a>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-app"
+              data-collapse="#menu-app-collapse"
+            >
+              <span class="icon-[tabler--user-hexagon] size-5"></span>
+              Blog
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-app-collapse" class="collapse hidden" aria-labelledby="menu-app">
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/blog" class="">
+                  <span class="icon-[tabler--category-filled] size-5"></span>
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-app"
+              data-collapse="#menu-app-pelanggan"
+            >
+              <span class="icon-[tabler--user-hexagon] size-5"></span>
+              Pendataan Pelanggan
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-app-pelanggan" class="collapse hidden" aria-labelledby="menu-app">
+              <li>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customerkategori"
+                  class=""
+                >
+                  <span class="icon-[tabler--category-filled] size-5"></span>
+                  Kategori Pelanggan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/cus/customer" class="">
+                  <span class="icon-[tabler--user] size-5"></span>
+                  Data Pelanggan
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-bahan"
+              data-collapse="#menu-bahan-collapse"
+            >
+              <span class="icon-[tabler--needle-thread] size-5"></span>
+              Pendataan bahan baku
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-bahan-collapse" class="collapse hidden" aria-labelledby="menu-bahan">
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahankategori" class="">
+                  <span class="icon-[tabler--category] size-5"></span>
+                  Kategori bahan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahan" class="">
+                  <span class="icon-[lets-icons--materials] size-5"></span>
+                  Bahan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/keperluan" class="">
+                  <span class="icon-[tabler--needle-thread] size-5"></span>
+                  Keperluan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/supplier" class="">
+                  <span class="icon-[tabler--user-down] size-5"></span>
+                  Supplier
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahanmasuk" class="">
+                  <span class="icon-[tabler--package-import] size-5"></span>
+                  Bahan Masuk
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/baku/bahankeluar" class="">
+                  <span class="icon-[tabler--package-export] size-5"></span>
+                  Bahan Keluar
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-produk"
+              data-collapse="#menu-produk-collapse"
+            >
+              <span class="icon-[tabler--package] size-5"></span>
+              Produk
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-produk-collapse" class="collapse hidden" aria-labelledby="menu-app">
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/prd/produkkategori" class="">
+                  <span class="icon-[tabler--category] size-5"></span>
+                  Kategori Produk
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/prd/produk" class="">
+                  <span class="icon-[tabler--package] size-5"></span>
+                  Data Produk
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="space-y-0.5">
+            <a
+              class="collapse-toggle collapse-open:bg-base-content/10"
+              id="menu-transaksi"
+              data-collapse="#menu-transaksi-collapse"
+            >
+              <span class="icon-[tabler--user-hexagon] size-5"></span>
+              Transaksi
+              <span
+                class="icon-[tabler--chevron-down] collapse-open:rotate-180 size-4 transition-all duration-300"
+              ></span>
+            </a>
+            <ul id="menu-transaksi-collapse" class="collapse hidden" aria-labelledby="menu-app">
+              <li>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/invoicesetting"
+                  class=""
+                >
+                  <span class="icon-[tabler--settings] size-5"></span>
+                  Invoice Setting
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/source" class="">
+                  <span class="icon-[tabler--brand-open-source] size-5"></span>
+                  Sumber Transaksi
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/penjualan" class="">
+                  <span class="icon-[material-symbols--point-of-sale] size-5"></span>
+                  Penjualan
+                </a>
+              </li>
+              <li>
+                <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/pemesanan" class="">
+                  <span class="icon-[tabler--brand-booking] size-5"></span>
+                  Pemesanan
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/manualinvoice"
+                  class=""
+                >
+                  <span class="icon-[tabler--brand-booking] size-5"></span>
+                  Manual Invoice
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://sukmaaji.my.id/mycode/dashboard_umkm/transaksi/downpayment"
+                  class=""
+                >
+                  <span class="icon-[tabler--device-ipad-horizontal-down] size-5"></span>
+                  Down Payment
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
 
-
-<div class="dropdown relative inline-flex rtl:[--placement:bottom-end] justify-center px-4 py-10">
-    <button id="dropdown-avatar" type="button" class="dropdown-toggle" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-        <li class="dropdown-header gap-3">
-            <div class="avatar">
+        <div
+          class="dropdown relative inline-flex rtl:[--placement:bottom-end] justify-center px-4 py-10"
+        >
+          <button
+            id="dropdown-avatar"
+            type="button"
+            class="dropdown-toggle"
+            aria-haspopup="menu"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <li class="dropdown-header gap-3">
+              <div class="avatar">
                 <div class="w-10 rounded-full">
-                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png" alt="User Avatar" />
+                  <img
+                    src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png"
+                    alt="User Avatar"
+                  />
                 </div>
-            </div>
-            <div>
+              </div>
+              <div>
                 <h6 class="text-base-content text-base font-semibold">Guest</h6>
                 <small class="text-base-content/50 text-sm font-normal">guest@example.com</small>
-            </div>
-        </li>
-        <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
-    </button>
-    <ul class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-avatar">
-        <li class="dropdown-header gap-3">
-            <div class="avatar">
+              </div>
+            </li>
+            <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="dropdown-avatar"
+          >
+            <li class="dropdown-header gap-3">
+              <div class="avatar">
                 <div class="w-10 rounded-full">
-                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png" alt="User Avatar" />
+                  <img
+                    src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png"
+                    alt="User Avatar"
+                  />
                 </div>
-            </div>
-            <div>
+              </div>
+              <div>
                 <h6 class="text-base-content text-base font-semibold">Guest</h6>
                 <small class="text-base-content/50 text-sm font-normal">guest@example.com</small>
-            </div>
-        </li>
-        <li><a class="dropdown-item" href="#">My Profile</a></li>
-        <li>
-            <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/setting" class=" dropdown-item ">
+              </div>
+            </li>
+            <li><a class="dropdown-item" href="#">My Profile</a></li>
+            <li>
+              <a href="https://sukmaaji.my.id/mycode/dashboard_umkm/setting" class="dropdown-item">
                 <span class="icon-[tabler--settings] size-5"></span>
                 Setting
-            </a>
-        </li>
-        <li>
-            <form method="POST" action="https://sukmaaji.my.id/mycode/dashboard_umkm/logout">
-                <input type="hidden" name="_token" value="CpSQtHIqtBzkiFoBS84c5S5k01ed3tw3CWZk9jtF" autocomplete="off">                <a class="btn btn-danger mx-3 mt-2 d-block" :href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">
-                    <span class="icon-[tabler--logout] size-4"></span>Logout
+              </a>
+            </li>
+            <li>
+              <form method="POST" action="https://sukmaaji.my.id/mycode/dashboard_umkm/logout">
+                <input
+                  type="hidden"
+                  name="_token"
+                  value="CpSQtHIqtBzkiFoBS84c5S5k01ed3tw3CWZk9jtF"
+                  autocomplete="off"
+                />
+                <a
+                  class="btn btn-danger mx-3 mt-2 d-block"
+                  :href="route('logout')"
+                  onclick="event.preventDefault(); this.closest('form').submit();"
+                >
+                  <span class="icon-[tabler--logout] size-4"></span>Logout
                 </a>
-            </form>
-        </li>
-    </ul>
-</div>
+              </form>
+            </li>
+          </ul>
         </div>
+      </div>
     </aside>
     <main id="main-content" class="">
-        <div class="sm:ml-64">
-                        <div class="container mt-5">
-    
-
-    <div class="card shadow-sm">
-        <div class="card-header bg-dark text-white">
-            <h5 class="mb-0">Peta Sebaran Pengunjung</h5>
-        </div>
-        <div class="card-body p-2">
-            
-            <div id="map"></div>
-        </div>
-    </div>
-</div>
-
-
-    
-    <div class="container mt-5">
-        
-        <div class="card shadow-sm">
+      <div class="sm:ml-64">
+        <div class="container mt-5">
+          <div class="card shadow-sm">
             <div class="card-header bg-dark text-white">
-                <h5 class="mb-0">Log Aktivitas Pengunjung</h5>
+              <h5 class="mb-0">Peta Sebaran Pengunjung</h5>
+            </div>
+            <div class="card-body p-2">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-5">
+          <div class="card shadow-sm">
+            <div class="card-header bg-dark text-white">
+              <h5 class="mb-0">Log Aktivitas Pengunjung</h5>
             </div>
             <div class="card-body">
-                
-                <div class="mb-4">
-                    <div class="input-group">
-                        <span class="input-group-text bg-light">
-                            
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
-                        </span>
-                        <input type="text" id="custom-search-field" class="form-control" placeholder="Ketik untuk mencari di semua kolom...">
-                    </div>
+              <div class="mb-4">
+                <div class="input-group">
+                  <span class="input-group-text bg-light">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-search"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    id="custom-search-field"
+                    class="form-control"
+                    placeholder="Ketik untuk mencari di semua kolom..."
+                  />
                 </div>
+              </div>
 
-                
-                <table id="logs-visitor-table" class="table table-striped table-hover" style="width:100%">
-                    <thead class="table-dark">
-                        <tr>
-                            <th>ID</th>
-                            <th>User</th>
-                            <th>IP Address</th>
-                            <th>Lokasi</th>
-                            <th>Browser</th>
-                            <th>OS</th>
-                            <th>Perangkat</th>
-                            <th>URL Dikunjungi</th>
-                            <th>Waktu</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                    </tbody>
-                </table>
+              <table
+                id="logs-visitor-table"
+                class="table table-striped table-hover"
+                style="width: 100%"
+              >
+                <thead class="table-dark">
+                  <tr>
+                    <th>ID</th>
+                    <th>User</th>
+                    <th>IP Address</th>
+                    <th>Lokasi</th>
+                    <th>Browser</th>
+                    <th>OS</th>
+                    <th>Perangkat</th>
+                    <th>URL Dikunjungi</th>
+                    <th>Waktu</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
             </div>
+          </div>
         </div>
-    </div>
-            <footer class="footer footer-center bg-base-100">
-    <aside>
-        <p>&copy; 2025 Dashboard UMKM - SukmaAjiDigital.</p>
-    </aside>
-</footer>
-        </div>
+        <footer class="footer footer-center bg-base-100">
+          <aside>
+            <p>
+              &copy; 2025 Dashboard UMKM -
+              <a href="https://sukmaaji.my.id" target="_blank" rel="noopener noreferrer"
+                >SukmaAjiDigital</a
+              >.
+            </p>
+          </aside>
+        </footer>
+      </div>
     </main>
-    <link rel="modulepreload" href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dc0IQJ--.js" /><script type="module" src="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dc0IQJ--.js"></script>    <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/jquery/dist/jquery.min.js"></script>
+    <link
+      rel="modulepreload"
+      href="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dc0IQJ--.js"
+    />
+    <script
+      type="module"
+      src="https://sukmaaji.my.id/mycode/dashboard_umkm/build/assets/app-Dc0IQJ--.js"
+    ></script>
+    <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/jquery/dist/jquery.min.js"></script>
     <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/select2/select2.min.js"></script>
-    <script type="text/javascript" src="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/datatable/datatable.min.js"></script>
-    <script type="text/javascript" src="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/loadform.js"></script>
+    <script
+      type="text/javascript"
+      src="https://sukmaaji.my.id/mycode/dashboard_umkm/assets/datatable/datatable.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://sukmaaji.my.id/mycode/dashboard_umkm/custom/loadform.js"
+    ></script>
     <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/flowbite/flowbite.min.js"></script>
     <script src="https://sukmaaji.my.id/mycode/dashboard_umkm/alert/sweetalert2.all.min.js"></script>
-            <script>
-            $(document).ready(function() {
+    <script>
+      $(document).ready(function () {
+        const apiUrl = "https://sukmaaji.my.id/mycode/dashboard_umkm/api/visitor-logs";
 
-                const apiUrl = 'https://sukmaaji.my.id/mycode/dashboard_umkm/api/visitor-logs';
+        function timeAgo(dateString) {
+          if (!dateString) return "N/A";
+          const date = new Date(dateString);
+          const now = new Date();
+          const seconds = Math.round((now - date) / 1000);
+          const minutes = Math.round(seconds / 60);
+          const hours = Math.round(minutes / 60);
+          const days = Math.round(hours / 24);
+          const months = Math.round(days / 30);
+          const years = Math.round(months / 12);
 
-                function timeAgo(dateString) {
-                    if (!dateString) return 'N/A';
-                    const date = new Date(dateString);
-                    const now = new Date();
-                    const seconds = Math.round((now - date) / 1000);
-                    const minutes = Math.round(seconds / 60);
-                    const hours = Math.round(minutes / 60);
-                    const days = Math.round(hours / 24);
-                    const months = Math.round(days / 30);
-                    const years = Math.round(months / 12);
+          if (years > 0) return `${years} tahun yang lalu`;
+          if (months > 0) return `${months} bulan yang lalu`;
+          if (days > 0) return `${days} hari yang lalu`;
+          if (hours > 0) return `${hours} jam yang lalu`;
+          if (minutes > 0) return `${minutes} menit yang lalu`;
+          if (seconds >= 10) return `${seconds} detik yang lalu`;
+          return "baru saja";
+        }
 
-                    if (years > 0) return `${years} tahun yang lalu`;
-                    if (months > 0) return `${months} bulan yang lalu`;
-                    if (days > 0) return `${days} hari yang lalu`;
-                    if (hours > 0) return `${hours} jam yang lalu`;
-                    if (minutes > 0) return `${minutes} menit yang lalu`;
-                    if (seconds >= 10) return `${seconds} detik yang lalu`;
-                    return "baru saja";
+        const dataTableInstance = $("#logs-visitor-table").DataTable({
+          ajax: {
+            url: apiUrl,
+            dataSrc: "data",
+          },
+          processing: true,
+          // Perubahan DOM untuk mengatur posisi elemen (info di kiri, pagination di kanan)
+          dom: "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+          columns: [
+            {
+              data: "id",
+            },
+            {
+              data: "user",
+              render: (data) =>
+                data
+                  ? `<a href="#">${data.name}</a>`
+                  : `<span class="px-2 py-1 text-white bg-green-500 rounded">Guest</span>`,
+            },
+            {
+              data: "ip_address",
+            },
+            {
+              data: "location",
+              // --- Perubahan di sini untuk tampilan lokasi yang lebih kaya ---
+              render: function (data) {
+                if (!data || data.status !== "success") {
+                  return `<span class="text-muted">N/A</span>`;
                 }
 
-                const dataTableInstance = $('#logs-visitor-table').DataTable({
-                    "ajax": {
-                        "url": apiUrl,
-                        "dataSrc": "data"
-                    },
-                    "processing": true,
-                    // Perubahan DOM untuk mengatur posisi elemen (info di kiri, pagination di kanan)
-                    "dom": "<'row'<'col-sm-12'tr>>" +
-                        "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
-                    "columns": [{
-                            "data": "id"
-                        },
-                        {
-                            "data": "user",
-                            "render": (data) => data ? `<a href="#">${data.name}</a>` : `<span class="px-2 py-1 text-white bg-green-500 rounded">Guest</span>`
-                        },
-                        {
-                            "data": "ip_address"
-                        },
-                        {
-                            "data": "location",
-                            // --- Perubahan di sini untuk tampilan lokasi yang lebih kaya ---
-                            "render": function(data) {
-                                if (!data || data.status !== 'success') {
-                                    return `<span class="text-muted">N/A</span>`;
-                                }
+                const mainLocation = [data.city, data.regionName, data.country]
+                  .filter(Boolean)
+                  .join(", ");
+                const ispInfo = data.isp
+                  ? `<small class="text-muted d-block mt-1">ISP: ${data.isp}</small>`
+                  : "";
 
-                                const mainLocation = [data.city, data.regionName, data.country].filter(Boolean).join(', ');
-                                const ispInfo = data.isp ? `<small class="text-muted d-block mt-1">ISP: ${data.isp}</small>` : '';
+                return `<div>${mainLocation || "Lokasi tidak diketahui"}</div>${ispInfo}`;
+              },
+            },
+            {
+              data: null,
+              render: (data, type, row) => `${row.browser || ""} (${row.browser_version || ""})`,
+            },
+            {
+              data: "os",
+            },
+            {
+              data: "device_type",
+            },
+            {
+              data: "url_visited",
+              render: (data) =>
+                `<div style="max-width: 200px; word-wrap: break-word; white-space: pre-wrap;">${
+                  data || ""
+                }</div>`,
+            },
+            {
+              data: "created_at",
+              render: (data) => timeAgo(data),
+            },
+          ],
+          order: [[0, "desc"]],
+        });
 
-                                return `<div>${mainLocation || 'Lokasi tidak diketahui'}</div>${ispInfo}`;
-                            }
-                        },
-                        {
-                            "data": null,
-                            "render": (data, type, row) => `${row.browser || ''} (${row.browser_version || ''})`
-                        },
-                        {
-                            "data": "os"
-                        },
-                        {
-                            "data": "device_type"
-                        },
-                        {
-                            "data": "url_visited",
-                            "render": (data) => `<div style="max-width: 200px; word-wrap: break-word; white-space: pre-wrap;">${data || ''}</div>`
-                        },
-                        {
-                            "data": "created_at",
-                            "render": (data) => timeAgo(data)
-                        }
-                    ],
-                    "order": [
-                        [0, "desc"]
-                    ]
-                });
+        $("#custom-search-field").on("keyup", function () {
+          dataTableInstance.search(this.value).draw();
+        });
 
-                $('#custom-search-field').on('keyup', function() {
-                    dataTableInstance.search(this.value).draw();
-                });
-
-                setInterval(function() {
-                    dataTableInstance.ajax.reload(null, false);
-                }, 10000);
-
-            });
-        </script>
-            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        setInterval(function () {
+          dataTableInstance.ajax.reload(null, false);
+        }, 10000);
+      });
+    </script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', async function() {
+      document.addEventListener("DOMContentLoaded", async function () {
+        // 1. Inisialisasi Peta
+        // Center peta di sekitar Indonesia
+        const map = L.map("map").setView([0, 0], 2);
 
-            // 1. Inisialisasi Peta
-            // Center peta di sekitar Indonesia
-            const map = L.map('map').setView([0, 0], 2);
+        // Tambahkan layer peta dari OpenStreetMap
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 19,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        }).addTo(map);
 
-            // Tambahkan layer peta dari OpenStreetMap
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-            }).addTo(map);
+        // 2. Ambil Data dari API
+        const apiUrl = "https://sukmaaji.my.id/mycode/dashboard_umkm/api/visitor-logs";
+        try {
+          const response = await fetch(apiUrl);
+          const result = await response.json();
+          const logs = result.data;
 
-            // 2. Ambil Data dari API
-            const apiUrl = 'https://sukmaaji.my.id/mycode/dashboard_umkm/api/visitor-logs';
-            try {
-                const response = await fetch(apiUrl);
-                const result = await response.json();
-                const logs = result.data;
+          // Update total pengunjung
+          // document.getElementById('total-visitors').textContent = logs.length.toLocaleString('id-ID');
 
-                // Update total pengunjung
-                // document.getElementById('total-visitors').textContent = logs.length.toLocaleString('id-ID');
+          // 3. Buat Marker Cluster
+          // Ini adalah layer khusus yang akan mengelompokkan marker
+          const markers = L.markerClusterGroup();
 
-                // 3. Buat Marker Cluster
-                // Ini adalah layer khusus yang akan mengelompokkan marker
-                const markers = L.markerClusterGroup();
+          logs.forEach((log) => {
+            // Pastikan data lokasi dan koordinatnya ada
+            if (log.location && log.location.lat && log.location.lon) {
+              // Buat marker untuk setiap log
+              const marker = L.marker([log.location.lat, log.location.lon]);
 
-                logs.forEach(log => {
-                    // Pastikan data lokasi dan koordinatnya ada
-                    if (log.location && log.location.lat && log.location.lon) {
-
-                        // Buat marker untuk setiap log
-                        const marker = L.marker([log.location.lat, log.location.lon]);
-
-                        // Buat konten popup yang akan muncul saat marker diklik
-                        const popupContent = `
-                                <b>${log.location.city || 'Tidak diketahui'}, ${log.location.country}</b><br>
+              // Buat konten popup yang akan muncul saat marker diklik
+              const popupContent = `
+                                <b>${log.location.city || "Tidak diketahui"}, ${
+                log.location.country
+              }</b><br>
                                 IP: ${log.ip_address}<br>
-                                ISP: ${log.location.isp || 'N/A'}<br>
-                                Browser: ${log.browser || 'N/A'}<br>
-                                Pengguna: ${log.user ? log.user.name : 'Guest'}
+                                ISP: ${log.location.isp || "N/A"}<br>
+                                Browser: ${log.browser || "N/A"}<br>
+                                Pengguna: ${log.user ? log.user.name : "Guest"}
                             `;
-                        marker.bindPopup(popupContent);
+              marker.bindPopup(popupContent);
 
-                        // Tambahkan marker ke layer cluster
-                        markers.addLayer(marker);
-                    }
-                });
-
-                // 4. Tambahkan layer cluster ke peta
-                map.addLayer(markers);
-
-            } catch (error) {
-                console.error("Gagal memuat data untuk peta:", error);
-                // Tampilkan pesan error jika gagal
-                document.getElementById('map').innerHTML = '<div class="alert alert-danger m-3">Gagal memuat data peta. Silakan coba lagi.</div>';
+              // Tambahkan marker ke layer cluster
+              markers.addLayer(marker);
             }
-        });
+          });
+
+          // 4. Tambahkan layer cluster ke peta
+          map.addLayer(markers);
+        } catch (error) {
+          console.error("Gagal memuat data untuk peta:", error);
+          // Tampilkan pesan error jika gagal
+          document.getElementById("map").innerHTML =
+            '<div class="alert alert-danger m-3">Gagal memuat data peta. Silakan coba lagi.</div>';
+        }
+      });
     </script>
-    
-    <script>
-        $(document).ready(function() {
-            $('.select2').select2({
-                placeholder: function() {
-                    return $(this).data('placeholder') || "Select an option";
-                },
-                allowClear: true,
-                width: '100%'
-            });
-        });
-    </script>
-    <script>
-        const loading = document.getElementById('loading-screen');
 
-        // Saat halaman dimuat selesai
-        window.addEventListener('load', () => {
-            if (loading) {
-                loading.classList.add('opacity-0');
-                setTimeout(() => loading.classList.add('hidden'), 1);
-            }
+    <script>
+      $(document).ready(function () {
+        $(".select2").select2({
+          placeholder: function () {
+            return $(this).data("placeholder") || "Select an option";
+          },
+          allowClear: true,
+          width: "100%",
         });
-
-        // Saat pengguna meninggalkan halaman (navigasi ke link lain atau reload)
-        window.addEventListener('beforeunload', () => {
-            if (loading) {
-                loading.classList.remove('hidden', 'opacity-0');
-                loading.classList.add('opacity-100');
-            }
-        });
+      });
     </script>
     <script>
-            </script>
-</body>
+      const loading = document.getElementById("loading-screen");
 
+      // Saat halaman dimuat selesai
+      window.addEventListener("load", () => {
+        if (loading) {
+          loading.classList.add("opacity-0");
+          setTimeout(() => loading.classList.add("hidden"), 1);
+        }
+      });
+
+      // Saat pengguna meninggalkan halaman (navigasi ke link lain atau reload)
+      window.addEventListener("beforeunload", () => {
+        if (loading) {
+          loading.classList.remove("hidden", "opacity-0");
+          loading.classList.add("opacity-100");
+        }
+      });
+    </script>
+    <script></script>
+  </body>
 </html>
